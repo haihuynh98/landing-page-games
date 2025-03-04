@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.6 17.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #888;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M114.8,97.1A17,17,0,0,1,100,105a18.23,18.23,0,0,1-14.8-7.9s5.1-7.9,14.8-7.9C110.8,89.2,114.8,97.1,114.8,97.1Z" transform="translate(-84.2 -88.2)"/>
+    <path class="cls-1" d="M103.9,97.1a3.9,3.9,0,1,1-3.9-3.9A3.84,3.84,0,0,1,103.9,97.1Z" transform="translate(-84.2 -88.2)"/>
+  </g>
+</svg>

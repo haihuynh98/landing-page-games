@@ -1,0 +1,1450 @@
+@font-face {
+  font-family: 'fzssksjt';
+  src: url('../fonts/fzssksjt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fzltxh';
+  src: url('../fonts/fzltxh.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fzcjljt';
+  src: url('../fonts/fzcjljt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSansSC';
+  src: url("../fonts/noto-sans-sc-v12-latin_chinese-simplified-regular.woff") format('woff2'), url("../fonts/noto-sans-sc-v12-latin_chinese-simplified-regular.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSansSC';
+  src: url("../fonts/noto-sans-sc-v12-latin_chinese-simplified-700.woff") format('woff2'), url("../fonts/noto-sans-sc-v12-latin_chinese-simplified-700.woff2") format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSansSC';
+  src: url("../fonts/noto-sans-sc-v12-latin_chinese-simplified-900.woff") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto-sans-sc-v12-latin_chinese-simplified-900.woff2") format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../fonts/Cinzel_400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cinzel';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/Cinzel_700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('../fonts/HKGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.noSize {
+  font-size: 0;
+  text-indent: -9999em;
+}
+.flex {
+  display: -webkit-box;
+  /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;
+  /* Firefox 17- */
+  display: -webkit-flex;
+  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;
+  /* Firefox 18+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}
+.g-nav {
+  @charset "utf-8";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /* CSS Document */
+  /** width >= 1920px **/
+  /** width < 1600px **/
+  /** width < 1440px **/
+  /** width < 1280px **/
+  /** width < 1024px **/
+  /** width < 960px **/
+  /** width < 720px **/
+  /** width < 600px **/
+  /** width < 360px **/
+}
+.g-nav * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.g-nav html,
+.g-nav body,
+.g-nav h1,
+.g-nav h2,
+.g-nav h3,
+.g-nav h4,
+.g-nav h5,
+.g-nav h6,
+.g-nav div,
+.g-nav dl,
+.g-nav dt,
+.g-nav dd,
+.g-nav ul,
+.g-nav ol,
+.g-nav li,
+.g-nav p,
+.g-nav blockquote,
+.g-nav pre,
+.g-nav hr,
+.g-nav figure,
+.g-nav table,
+.g-nav caption,
+.g-nav th,
+.g-nav td,
+.g-nav form,
+.g-nav fieldset,
+.g-nav legend,
+.g-nav input,
+.g-nav button,
+.g-nav textarea,
+.g-nav menu {
+  margin: 0;
+  padding: 0;
+}
+.g-nav body {
+  padding: 0;
+  margin: 0;
+}
+.g-nav html,
+.g-nav body,
+.g-nav fieldset,
+.g-nav img,
+.g-nav iframe,
+.g-nav abbr {
+  border: 0;
+}
+.g-nav li {
+  list-style: none;
+}
+.g-nav textarea {
+  overflow: auto;
+  resize: none;
+}
+.g-nav input {
+  outline: none;
+}
+.g-nav table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.g-nav h1,
+.g-nav h2,
+.g-nav h3,
+.g-nav h4,
+.g-nav h5,
+.g-nav h6 {
+  font-weight: normal;
+  font-style: normal;
+}
+.g-nav strong,
+.g-nav b {
+  font-weight: bold;
+  font-style: normal;
+}
+.g-nav em,
+.g-nav i {
+  font-weight: normal;
+  font-style: italic;
+}
+.g-nav button {
+  border: none;
+  outline: none;
+}
+.g-nav a,
+.g-nav button {
+  cursor: pointer;
+}
+.g-nav a,
+.g-nav a:hover {
+  text-decoration: none;
+}
+.g-nav textarea,
+.g-nav input,
+.g-nav button,
+.g-nav a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.g-nav input,
+.g-nav textarea,
+.g-nav a,
+.g-nav div,
+.g-nav button,
+.g-nav select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+.g-nav select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.g-nav input:-webkit-autofill,
+.g-nav input:-webkit-autofill:hover,
+.g-nav input:-webkit-autofill:focus,
+.g-nav input:-webkit-autofill:active {
+  -webkit-transition-delay: 999999s;
+  -webkit-transition: color 999999s ease-out, background-color 999999s ease-out;
+}
+.g-nav #NIE-warning-dialog {
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+.g-nav .g-wbox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 6em;
+  max-width: 1920px;
+}
+@media screen and (max-width: 1439px) {
+  .g-nav .g-wbox {
+    padding: 0 4em;
+  }
+}
+@media screen and (max-width: 959px) {
+  .g-nav .g-wbox {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .g-nav .g-wbox {
+    padding: 0 10px;
+  }
+}
+.g-nav.is-mobile .nav-wrap .nav-download,
+.g-nav.is-mobile .nav-wrap .nav-match,
+.g-nav.is-mobile .nav-wrap .nav-holoroth {
+  display: none;
+}
+.g-nav.en {
+  font-family: 'Cinzel', serif;
+}
+.g-nav.en .nav-box {
+  font-size: 17px;
+  /** width >= 1920px **/
+  /** width < 1700px **/
+  /** width < 1440px **/
+}
+@media screen and (min-width: 1920px) {
+  .g-nav.en .nav-box {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1699px) {
+  .g-nav.en .nav-box {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .g-nav.en .nav-box {
+    font-size: 13px;
+  }
+}
+.g-nav.en .nav-box .nav-item {
+  margin: 0 0.5em;
+}
+.g-nav.en .nav-box .nav-item .link {
+  font-weight: bold;
+}
+.g-nav.en .username {
+  font-family: 'HK Grotesk', sans-serif;
+}
+.g-nav.en .btn-login,
+.g-nav.en .btn-logout {
+  font-family: Cinzel, sans-serif;
+  font-weight: bold;
+}
+.no-webp .g-nav.zh-cht .logo {background-image:url(../images/logo-new_489fd07f.png)}
+.webp .g-nav.zh-cht .logo {background-image:url(../images/logo-new_489fd07f.webp)}
+.g-nav.zh-cht .logo {
+}
+.no-webp .g-nav .nav-wrap {background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)))}
+.webp .g-nav .nav-wrap {background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)))}
+.no-webp .g-nav .nav-wrap {background:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))}
+.webp .g-nav .nav-wrap {background:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))}
+.g-nav .nav-wrap {
+  height: 93px;
+  -webkit-transition: .5s transform;
+  transition: .5s transform;
+}
+.g-nav.fold .nav-wrap {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+.no-webp .g-nav .logo {background:url(../images/logo-white-new_5f77feaf.png) center no-repeat;
+  background-size: contain}
+.webp .g-nav .logo {background:url(../images/logo-white-new_5f77feaf.webp) center no-repeat;
+  background-size: contain}
+.no-webp .g-nav .logo {background-size:contain}
+.webp .g-nav .logo {background-size:contain}
+.g-nav .logo {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  width: 201px;
+  height: 78px;
+  z-index: 10;
+}
+.g-nav .nav-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+  font-size: 18px;
+  line-height: 68px;
+  color: #ffffff;
+}
+.g-nav .nav-box .nav-toggler {
+  display: none;
+}
+.g-nav .nav-box .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.g-nav .nav-box .nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.g-nav .nav-box .nav-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0.8em;
+}
+.g-nav .nav-box .nav-item .link {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  font-size: 1.15em;
+}
+.g-nav .nav-box .nav-item .link:before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 0;
+  border-top: 2px solid #ffffff;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+.g-nav .nav-box .nav-item .link:hover:before {
+  width: 100%;
+}
+.no-webp .g-nav .nav-box .nav-item .flag {background:#a90003}
+.webp .g-nav .nav-box .nav-item .flag {background:#a90003}
+.g-nav .nav-box .nav-item .flag {
+  position: relative;
+  margin-top: -2em;
+  margin-left: 0.2em;
+  margin-right: -0.2em;
+  padding: 0 0.2em;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.g-nav .nav-box .nav-item .flag:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 5px solid transparent;
+  border-left: 0;
+  border-top-color: #a90003;
+}
+.no-webp .g-nav .nav-box .follow-us a {background:center no-repeat}
+.webp .g-nav .nav-box .follow-us a {background:center no-repeat}
+.no-webp .g-nav .nav-box .follow-us a {background-size:contain}
+.webp .g-nav .nav-box .follow-us a {background-size:contain}
+.g-nav .nav-box .follow-us a {
+  display: inline-block;
+  margin: 0 0.2em;
+  width: 1.5em;
+  height: 1.5em;
+  opacity: 0.7;
+  -webkit-transition: .5s opacity;
+  transition: .5s opacity;
+}
+.g-nav .nav-box .follow-us a:hover {
+  opacity: 1;
+}
+.no-webp .g-nav .nav-box .follow-us .twitter {background-image:url(../images/icon-twitter_aef0df48.png)}
+.webp .g-nav .nav-box .follow-us .twitter {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-twitter_aef0df48.webp)}
+.g-nav .nav-box .follow-us .twitter {
+}
+.no-webp .g-nav .nav-box .follow-us .youtube {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-youtube_c7fdb3db.png)}
+.webp .g-nav .nav-box .follow-us .youtube {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-youtube_c7fdb3db.webp)}
+.g-nav .nav-box .follow-us .youtube {
+}
+.no-webp .g-nav .nav-box .follow-us .facebook {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-facebook_d9cc48f8.png)}
+.webp .g-nav .nav-box .follow-us .facebook {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-facebook_d9cc48f8.webp)}
+.g-nav .nav-box .follow-us .facebook {
+}
+.no-webp .g-nav .nav-box .follow-us .steam {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-steam_6a424e03.png)}
+.webp .g-nav .nav-box .follow-us .steam {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-steam_6a424e03.webp)}
+.g-nav .nav-box .follow-us .steam {
+}
+.no-webp .g-nav .nav-box .follow-us .discord {background-image:url(../images/icon-discord_ca89470f.png)}
+.webp .g-nav .nav-box .follow-us .discord {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-discord_ca89470f.webp)}
+.g-nav .nav-box .follow-us .discord {
+}
+.no-webp .g-nav .nav-box .follow-us .naver {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-naver_8dc11247.png)}
+.webp .g-nav .nav-box .follow-us .naver {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-naver_8dc11247.webp)}
+.g-nav .nav-box .follow-us .naver {
+}
+.no-webp .g-nav .nav-box .follow-us .instagram {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-ins_eaf0f0cf.png)}
+.webp .g-nav .nav-box .follow-us .instagram {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-ins_eaf0f0cf.webp)}
+.g-nav .nav-box .follow-us .instagram {
+}
+.g-nav .nav-box .follow-us.mobile {
+  display: none;
+}
+.no-webp .g-nav .nav-box .nav-buy .link {background:#b80002}
+.webp .g-nav .nav-box .nav-buy .link {background:#b80002}
+.g-nav .nav-box .nav-buy .link {
+  display: block;
+  padding: 0 20px!important;
+  margin: 20px auto;
+  line-height: 32px;
+}
+.g-nav .nav-box .nav-buy .link::before {
+  content: none;
+}
+.g-nav .nav-box .login-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.g-nav .nav-box .login-box.active .btn-login {
+  display: none;
+}
+.g-nav .nav-box .login-box.active .user-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.no-webp .g-nav .nav-box .btn-login, 
+.no-webp .g-nav .nav-box .btn-logout, 
+.no-webp .g-nav .nav-box .btn-code {background:#ffffff}
+.webp .g-nav .nav-box .btn-login, 
+.webp .g-nav .nav-box .btn-logout, 
+.webp .g-nav .nav-box .btn-code {background:#ffffff}
+.g-nav .nav-box .btn-login,
+.g-nav .nav-box .btn-logout,
+.g-nav .nav-box .btn-code {
+  white-space: nowrap;
+  padding: 0.1em 1.0em;
+  line-height: 1.5;
+  color: #830003;
+  border-radius: 3px;
+}
+.no-webp .g-nav .nav-box .btn-login:hover, 
+.no-webp .g-nav .nav-box .btn-logout:hover, 
+.no-webp .g-nav .nav-box .btn-code:hover {background:#a77a2d}
+.webp .g-nav .nav-box .btn-login:hover, 
+.webp .g-nav .nav-box .btn-logout:hover, 
+.webp .g-nav .nav-box .btn-code:hover {background:#a77a2d}
+.g-nav .nav-box .btn-login:hover,
+.g-nav .nav-box .btn-logout:hover,
+.g-nav .nav-box .btn-code:hover {
+  color: #ffffff;
+}
+.g-nav .nav-box .user-info {
+  display: none;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.no-webp .g-nav .nav-box .user-info .source-icon {background:center no-repeat}
+.webp .g-nav .nav-box .user-info .source-icon {background:center no-repeat}
+.no-webp .g-nav .nav-box .user-info .source-icon {background-size:contain}
+.webp .g-nav .nav-box .user-info .source-icon {background-size:contain}
+.g-nav .nav-box .user-info .source-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+  display: none;
+}
+.g-nav .nav-box .user-info .source-icon.active {
+  display: block;
+}
+.no-webp .g-nav .nav-box .user-info .source-icon.steam {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-steam-3_06fa6ae6.png)}
+.webp .g-nav .nav-box .user-info .source-icon.steam {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-steam-3_06fa6ae6.webp)}
+.g-nav .nav-box .user-info .source-icon.steam {
+}
+.no-webp .g-nav .nav-box .user-info .source-icon.epic {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-epic_f002ce08.png)}
+.webp .g-nav .nav-box .user-info .source-icon.epic {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-epic_f002ce08.webp)}
+.g-nav .nav-box .user-info .source-icon.epic {
+  width: 21px;
+  height: 40px;
+}
+.no-webp .g-nav .nav-box .user-info .source-icon.xbox {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-xbox_5be4d567.png)}
+.webp .g-nav .nav-box .user-info .source-icon.xbox {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/icon-xbox_5be4d567.webp)}
+.g-nav .nav-box .user-info .source-icon.xbox {
+}
+.g-nav .nav-box .user-info .username {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+  cursor: pointer;
+}
+.no-webp .g-nav .nav-box .user-info .arrow {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/select-icon_28f56b26.png) center no-repeat;
+  background-size: contain}
+.webp .g-nav .nav-box .user-info .arrow {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/select-icon_28f56b26.webp) center no-repeat;
+  background-size: contain}
+.no-webp .g-nav .nav-box .user-info .arrow {background-size:contain}
+.webp .g-nav .nav-box .user-info .arrow {background-size:contain}
+.g-nav .nav-box .user-info .arrow {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 30px;
+  height: 7px;
+  margin: 0 -10px 0 0.1rem;
+}
+.no-webp .g-nav .nav-box .user-info .dot {background:#d83636}
+.webp .g-nav .nav-box .user-info .dot {background:#d83636}
+.g-nav .nav-box .user-info .dot {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.g-nav .nav-box .user-info .dot.active {
+  display: block;
+}
+.g-nav .nav-box .user-pop-box {
+  display: none;
+  right: 0;
+  left: initial;
+  -webkit-transform: none;
+          transform: none;
+  top: 100%;
+  padding: 20px 1em;
+}
+.no-webp .g-nav .nav-box .user-pop-box::after {background:rgba(0, 0, 0, 0.9)}
+.webp .g-nav .nav-box .user-pop-box::after {background:rgba(0, 0, 0, 0.9)}
+.g-nav .nav-box .user-pop-box::after {
+}
+.g-nav .nav-box .user-pop-box .my-account {
+  padding-bottom: 0.6em;
+}
+.g-nav .nav-box .btn-logout,
+.g-nav .nav-box .btn-code {
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+.g-nav .nav-box .btn-code {
+  display: none;
+  margin-bottom: 15px;
+}
+.g-nav.fab-fix {
+  position: fixed;
+}
+.g-nav.fab-fix .nav-box .contact {
+  position: relative;
+  right: 30px;
+  height: 100%;
+}
+.g-nav.fab-fix .nav-box .contact:hover .contact-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.no-webp .g-nav.fab-fix .nav-box .contact-list {background:#282d32}
+.webp .g-nav.fab-fix .nav-box .contact-list {background:#282d32}
+.g-nav.fab-fix .nav-box .contact-list {
+  position: absolute;
+  padding: 0 10px;
+  left: -145px;
+  bottom: -100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.no-webp .g-nav.fab-fix .nav-box .contact-list .btn-copy-contact {background:#ffff}
+.webp .g-nav.fab-fix .nav-box .contact-list .btn-copy-contact {background:#ffff}
+.g-nav.fab-fix .nav-box .contact-list .btn-copy-contact {
+  width: 73px;
+  height: 28px;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  cursor: pointer;
+  font-style: normal;
+  margin-left: 14px;
+  color: #830003;
+}
+.no-webp .g-nav.fab-fix .nav-box .contact-list .btn-copy-contact:hover {background:#a77a2d}
+.webp .g-nav.fab-fix .nav-box .contact-list .btn-copy-contact:hover {background:#a77a2d}
+.g-nav.fab-fix .nav-box .contact-list .btn-copy-contact:hover {
+  color: #fff;
+}
+.g-nav .dropdown-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  padding: 20px 0;
+  min-width: 100%;
+  line-height: 1.5;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-family: 'HK Grotesk';
+}
+.g-nav .dropdown {
+  position: relative;
+}
+.no-webp .g-nav .dropdown .link:after {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/select-icon_28f56b26.png) center no-repeat;
+  background-size: contain}
+.webp .g-nav .dropdown .link:after {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/select-icon_28f56b26.webp) center no-repeat;
+  background-size: contain}
+.no-webp .g-nav .dropdown .link:after {background-size:contain}
+.webp .g-nav .dropdown .link:after {background-size:contain}
+.g-nav .dropdown .link:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 9px;
+  height: 7px;
+}
+.g-nav .dropdown:hover .link:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.g-nav .dropdown:hover .dropdown-nav {
+  display: block;
+}
+.g-nav .dropdown-nav {
+  line-height: 2;
+}
+.g-nav .dropdown-nav:before {
+  content: '';
+  display: block;
+  height: 16px;
+}
+.no-webp .g-nav .dropdown-nav:after {background:rgba(0, 0, 0, 0.6)}
+.webp .g-nav .dropdown-nav:after {background:rgba(0, 0, 0, 0.6)}
+.g-nav .dropdown-nav:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: -1;
+}
+.g-nav .dropdown-nav a {
+  position: relative;
+  z-index: 1;
+}
+.g-nav .dropdown-item {
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 0 1.5em;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+}
+.g-nav .dropdown-item.active:before {
+  content: '\221A   ';
+  display: inline-block;
+  margin-left: -1em;
+  margin-right: 0.4em;
+  color: #fff;
+}
+.g-nav .dropdown-item:hover,
+.g-nav .dropdown-item.active {
+  color: #fff;
+}
+.g-nav .nav-collapse.open .dropdown .dropdown-nav::before,
+.g-nav .nav-collapse.open .dropdown .dropdown-nav::after {
+  content: none;
+}
+.g-nav {
+  /** width < 1280px **/
+}
+@media screen and (max-width: 1439px) {
+  .g-nav .nav-wrap {
+    height: 73px;
+  }
+  .g-nav .logo {
+    top: 6px;
+    width: 154px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .g-nav .nav-box {
+    font-size: 13px;
+  }
+  .g-nav .nav-box .nav-item {
+    margin: 0 0.4em;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .g-nav {
+    width: 100%;
+  }
+  .g-nav .logo {
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  .g-nav.en .logo {
+    left: 45%;
+  }
+  .g-nav .nav-box {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+  }
+  .g-nav .nav-box .nav-home {
+    display: none;
+  }
+  .g-nav .nav-box .nav-item {
+    margin: 0 0.5em;
+  }
+  .g-nav .nav-box .nav-item .link {
+    font-size: 18px;
+  }
+  .g-nav .nav-box .follow-us a {
+    width: 24px;
+    height: 24px;
+  }
+  .g-nav .nav-box .dropdown-item {
+    font-size: 16px;
+  }
+  .g-nav .nav-box .nav-toggler {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  .g-nav .nav-box .nav-toggler .svg-menu {
+    position: absolute;
+    top: -70%;
+    left: -70%;
+    width: 240%;
+    height: 240%;
+    pointer-events: none;
+  }
+.no-webp .g-nav .nav-box .nav-collapse {background:rgba(0, 0, 0, 0.92)}
+.webp .g-nav .nav-box .nav-collapse {background:rgba(0, 0, 0, 0.92)}
+  .g-nav .nav-box .nav-collapse {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 68px;
+    overflow: auto;
+  }
+  .g-nav .nav-box .nav-collapse .nav-item {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    line-height: 38px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .g-nav .nav-box .nav-collapse .nav-item .link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .g-nav .nav-box .nav-collapse .nav-item .link:before {
+    bottom: 10px;
+    border-color: #ca0000;
+  }
+  .g-nav .nav-box .nav-collapse .nav-item .link:hover:before {
+    width: 60%;
+  }
+.no-webp .g-nav .nav-box .nav-collapse .nav-item:after {background:-webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)))}
+.webp .g-nav .nav-box .nav-collapse .nav-item:after {background:-webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)))}
+.no-webp .g-nav .nav-box .nav-collapse .nav-item:after {background:linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0))}
+.webp .g-nav .nav-box .nav-collapse .nav-item:after {background:linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0))}
+  .g-nav .nav-box .nav-collapse .nav-item:after {
+    -webkit-transform: none;
+            transform: none;
+    width: 95%;
+    height: 1px;
+  }
+  .g-nav .nav-box .nav-collapse .nav-item:last-child:after {
+    display: none;
+  }
+  .g-nav .nav-box .nav-collapse .nav-item .flag {
+    margin-right: -3em;
+    margin-left: 0.5em;
+  }
+  .g-nav .nav-box .nav-collapse .dropdown .link:after {
+    display: none;
+  }
+.no-webp .g-nav .nav-box .nav-collapse .dropdown-nav {background:none}
+.webp .g-nav .nav-box .nav-collapse .dropdown-nav {background:none}
+  .g-nav .nav-box .nav-collapse .dropdown-nav {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .g-nav .nav-box .nav-collapse.open {
+    display: block;
+  }
+  .g-nav .nav-box .dropdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .g-nav .nav-box .btn-login {
+    padding: 0.3em 1.2em;
+  }
+  .g-nav .nav-box .btn-login,
+  .g-nav .nav-box .btn-logout,
+  .g-nav .nav-box .btn-code {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .g-nav.en .nav-box {
+    font-size: 12px;
+  }
+  .g-nav .logo {
+    height: 45px;
+  }
+  .g-nav .nav-wrap {
+    height: 60px;
+  }
+  .g-nav .nav-box {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 40px;
+    border-bottom-width: 1px;
+  }
+  .g-nav .nav-box .nav-toggler {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .g-nav .nav-box .nav-collapse {
+    top: 60px;
+  }
+  .g-nav .nav-box .user-info .username {
+    max-width: 80px;
+  }
+  .g-nav .nav-box .user-info .user-pop-box .btn-code {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .g-nav .nav-box .follow-us {
+    display: initial;
+  }
+  .g-nav .nav-box .follow-us .link {
+    display: none;
+  }
+  .g-nav .nav-box .follow-us .dropdown-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .g-nav .nav-box .follow-us .dropdown-nav::before,
+  .g-nav .nav-box .follow-us .dropdown-nav::after {
+    content: none;
+  }
+  .g-nav .nav-box .nav-buy {
+    display: none;
+  }
+}
+.svg-menu circle {
+  fill: #fff3;
+  opacity: 0;
+}
+.svg-menu path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  --length: 24;
+  --offset: -38;
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.svg-menu path.line--1,
+.svg-menu path.line--3 {
+  stroke-dasharray: 24px 126.64183044433594px;
+  stroke-dashoffset: -38px;
+}
+.svg-menu path.line--2 {
+  stroke-dasharray: 24px 70px;
+  stroke-dashoffset: -38px;
+}
+.cross .svg-menu path.line--1,
+.cross .svg-menu path.line--3 {
+  stroke-dasharray: 22.627416998px 126.64183044433594px;
+  stroke-dashoffset: -94.11491851px;
+}
+.cross .svg-menu path.line--2 {
+  stroke-dasharray: 0 70px;
+  stroke-dashoffset: -50px;
+}
+.no-webp #uniLoginModel {background:rgba(0, 0, 0, 0.7)}
+.webp #uniLoginModel {background:rgba(0, 0, 0, 0.7)}
+#uniLoginModel {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  z-index: 999;
+}
+.no-webp #uniLoginWrap {background:#f4f4f4}
+.webp #uniLoginWrap {background:#f4f4f4}
+#uniLoginWrap {
+  width: 80%;
+  min-width: 320px;
+  max-width: 590px;
+  margin: 10px auto;
+  padding: 20px 0 40px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#uniLoginWrap .title {
+  text-align: center;
+  font-size: 32px;
+  color: #333333;
+  font-weight: 700;
+  font-family: 'Cinzel';
+  margin-top: 56px;
+}
+#uniLoginWrap > div {
+  cursor: pointer;
+  margin: 30px auto 10px auto;
+}
+#uniLoginWrap > div svg {
+  display: none;
+}
+#uniLoginWrap .icon-wrap {
+  width: 296px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+#uniLoginWrap .icon-wrap > div {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3%;
+      -ms-flex: 0 0 33.3%;
+          flex: 0 0 33.3%;
+  margin: 0 0 30px 0;
+}
+#uniLoginWrap .icon-wrap > div .name {
+  padding: 8px 0 0 0;
+}
+.no-webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-fb_caad2af4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-fb_caad2af4.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-position:center}
+.webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #fb_id_login .fb_id_login_icon {background-size:100%}
+#uniLoginWrap #fb_id_login .fb_id_login_icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #fb_id_login .fb_id_login_icon {
+    width: 57.6px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-gg_1b72ac75.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-gg_1b72ac75.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-position:center}
+.webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #gg_id_login .gg_id_login_icon {background-size:100%}
+#uniLoginWrap #gg_id_login .gg_id_login_icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #gg_id_login .gg_id_login_icon {
+    width: 57.6px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-tw_f99f0396.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-tw_f99f0396.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-position:center}
+.webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #tw_id_login .tw_id_login_icon {background-size:100%}
+#uniLoginWrap #tw_id_login .tw_id_login_icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #tw_id_login .tw_id_login_icon {
+    width: 57.6px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-steam_36fb2146.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-steam_36fb2146.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-position:center}
+.webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #steam_id_login .steam_id_login_icon {background-size:100%}
+#uniLoginWrap #steam_id_login .steam_id_login_icon {
+  width: 73px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #steam_id_login .steam_id_login_icon {
+    width: 58.4px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-ep_8b8a717f.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-ep_8b8a717f.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-position:center}
+.webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #epic_id_login .epic_id_login_icon {background-size:100%}
+#uniLoginWrap #epic_id_login .epic_id_login_icon {
+  width: 73px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #epic_id_login .epic_id_login_icon {
+    width: 58.4px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-na_bf4d52d6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-na_bf4d52d6.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-position:center}
+.webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #naver_id_login .naver_id_login_icon {background-size:100%}
+#uniLoginWrap #naver_id_login .naver_id_login_icon {
+  width: 73px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #naver_id_login .naver_id_login_icon {
+    width: 58.4px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-xbox_e33a6548.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-image:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-xbox_e33a6548.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-position:center}
+.webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-position:center}
+.no-webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-repeat:no-repeat}
+.webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-repeat:no-repeat}
+.no-webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-size:100%}
+.webp #uniLoginWrap #xbox_id_login .xbox_id_login_icon {background-size:100%}
+#uniLoginWrap #xbox_id_login .xbox_id_login_icon {
+  width: 73px;
+  height: 72px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  #uniLoginWrap #xbox_id_login .xbox_id_login_icon {
+    width: 58.4px;
+    height: 57.6px;
+  }
+}
+.no-webp #uniLoginWrap .btn-close {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-close-3_1a73dbc5.png)}
+.webp #uniLoginWrap .btn-close {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-close-3_1a73dbc5.webp)}
+#uniLoginWrap .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+#uniLoginWrap .btn-close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#uniLoginWrap .policy {
+  text-align: center;
+  font-size: 20px;
+  color: #4076D1;
+  font-family: 'HK Grotesk';
+  display: block;
+  border-bottom: 1px solid #4076D1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+.no-webp #uniLoginWrap .btn-close {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-close-3_1a73dbc5.png);
+    background-size: 22px 22px}
+.webp #uniLoginWrap .btn-close {background:url(https://www.narakathegame.com/pc/gw/20210601195432/img/btn-close-3_1a73dbc5.webp);
+    background-size: 22px 22px}
+.no-webp #uniLoginWrap .btn-close {background-size:22px 22px}
+.webp #uniLoginWrap .btn-close {background-size:22px 22px}
+  #uniLoginWrap .btn-close {
+    width: 22px;
+    height: 22px;
+    right: 10px;
+    top: 10px;
+  }
+  #uniLoginWrap .title {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #uniLoginWrap > div {
+    margin: 20px auto;
+  }
+  #uniLoginWrap > div.icon-wrap {
+    width: 246px;
+  }
+  #uniLoginWrap .policy {
+    font-size: 12px;
+  }
+}
+.no-webp .bottom-cookie-wrap {background:rgba(54, 0, 2, 0.8)}
+.webp .bottom-cookie-wrap {background:rgba(54, 0, 2, 0.8)}
+.bottom-cookie-wrap {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 80px 10px 20px;
+  width: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  border-top: 2px solid rgba(164, 33, 33, 0.7);
+}
+.bottom-cookie-wrap.show {
+  -webkit-transform: none;
+          transform: none;
+}
+.bottom-cookie-wrap.animate {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.bottom-cookie-wrap .cookie-content a {
+  text-decoration: underline;
+  color: inherit;
+}
+.bottom-cookie-wrap .btn-wrap {
+  text-align: center;
+  margin-left: 30px;
+  width: 210px;
+}
+.bottom-cookie-wrap .btn-wrap .btn {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.no-webp .bottom-cookie-wrap .btn-wrap .btn:hover {background:#fff}
+.webp .bottom-cookie-wrap .btn-wrap .btn:hover {background:#fff}
+.bottom-cookie-wrap .btn-wrap .btn:hover {
+  color: #71100e;
+}
+.bottom-cookie-wrap .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+.bottom-cookie-wrap .btn-close:before,
+.bottom-cookie-wrap .btn-close:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  border-right: 1px solid #ffffff;
+}
+.bottom-cookie-wrap .btn-close:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.bottom-cookie-wrap .btn-close:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.bottom-cookie-wrap .btn-close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+@media screen and (max-width: 959px) {
+  .bottom-cookie-wrap {
+    display: none;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-right: 20px;
+  }
+  .bottom-cookie-wrap.show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bottom-cookie-wrap .btn-wrap {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .bottom-cookie-wrap .btn-wrap .btn {
+    display: inline-block;
+    margin: 4px 8px;
+    padding: 4px 5px;
+    width: 140px;
+  }
+  .bottom-cookie-wrap .btn-close {
+    top: auto;
+    bottom: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bottom-cookie-wrap .btn-close {
+    width: 30px;
+    height: 30px;
+  }
+}
+

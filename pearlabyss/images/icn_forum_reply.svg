@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.3 37.9">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #888;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <line class="cls-1" x1="17.6" y1="18.8" x2="31.5" y2="18.8"/>
+        <line class="cls-1" x1="17.6" y1="25" x2="31.5" y2="25"/>
+      </g>
+      <path class="cls-2" d="M95.1,93.9v13.2a3.33,3.33,0,0,0,3.3,3.3h10.9l5.1,5.1v-5.1h2.9a3.33,3.33,0,0,0,3.3-3.3V93.9a3.33,3.33,0,0,0-3.3-3.3H98.4A3.2,3.2,0,0,0,95.1,93.9Z" transform="translate(-83.3 -78.6)"/>
+    </g>
+    <path class="cls-2" d="M109.8,89.6V82.9a3.2,3.2,0,0,0-3.3-3.3H87.6a3.33,3.33,0,0,0-3.3,3.3V96.1a3.33,3.33,0,0,0,3.3,3.3h1.9v5.1l5.1-5.1" transform="translate(-83.3 -78.6)"/>
+  </g>
+</svg>

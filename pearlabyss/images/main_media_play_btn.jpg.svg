@@ -1,0 +1,30 @@
+<svg id="play_btn_copy_복사" data-name="play_btn copy 복사" xmlns="http://www.w3.org/2000/svg" width="51.625" height="80.875" viewBox="0 0 51.625 80.875">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        opacity: 0.25;
+      }
+
+      .cls-3 {
+        fill: #d3ab60;
+      }
+
+      .cls-4 {
+        fill: #ffda95;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M4.372,10.165V71.7L45.8,40.544Z" transform="translate(-0.75 -0.875)"/>
+  <path id="Rectangle_1364_copy_2" data-name="Rectangle 1364 copy 2" class="cls-2" d="M1.481,81.753V1.612A10.346,10.346,0,0,0,4.273,4.847l48.1,36.461L4.36,78.391A6.484,6.484,0,0,0,1.481,81.753ZM5.906,12.1v59.17L45.737,41.308Z" transform="translate(-0.75 -0.875)"/>
+  <path id="Rectangle_1364_copy_3" data-name="Rectangle 1364 copy 3" class="cls-3" d="M0.743,81V0.863A10.359,10.359,0,0,0,3.535,4.1l48.1,36.461L3.622,77.642A6.485,6.485,0,0,0,.743,81ZM5.169,11.35v59.17L45,40.56Z" transform="translate(-0.75 -0.875)"/>
+  <path id="Rectangle_1364_copy" data-name="Rectangle 1364 copy" class="cls-4" d="M0.743,81V0.863A10.359,10.359,0,0,0,3.535,4.1l48.1,36.461L3.622,77.642A6.485,6.485,0,0,0,.743,81ZM5.169,11.35v59.17L45,40.56Z" transform="translate(-0.75 -0.875)"/>
+</svg>

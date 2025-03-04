@@ -1,0 +1,5006 @@
+@charset "utf-8";
+.noSize {
+  font-size: 0;
+  text-indent: -9999em;
+}
+.flex {
+  display: -webkit-box;
+  /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box;
+  /* Firefox 17- */
+  display: -webkit-flex;
+  /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex;
+  /* Firefox 18+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}
+@-webkit-keyframes fadeInOut {
+  0%,
+  25%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  75% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInOut {
+  0%,
+  25%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  75% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInOut {
+  0%,
+  25%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  0%,
+  25%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  75% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes zoomInAndOut {
+  0% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  50% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1.1);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    opacity: 1;
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(0.9);
+  }
+  50% {
+    -o-transform: scale(1.1);
+  }
+  100% {
+    -o-transform: scale(0.9);
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform: rotate(0);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    -webkit-transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  40% {
+    -webkit-transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes hinge {
+  0% {
+    -moz-transform: rotate(0);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    -moz-transform: rotate(80deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+  40% {
+    -moz-transform: rotate(60deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+  80% {
+    -moz-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+  100% {
+    -moz-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@-o-keyframes hinge {
+  0% {
+    -o-transform: rotate(0);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    -o-transform: rotate(80deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+  40% {
+    -o-transform: rotate(60deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+  80% {
+    -o-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+  100% {
+    -o-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@keyframes hinge {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  40% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+            transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@-moz-keyframes wobble {
+  0% {
+    -moz-transform: translateX(0%);
+  }
+  15% {
+    -moz-transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    -moz-transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    -moz-transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    -moz-transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    -moz-transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    -moz-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@-o-keyframes wobble {
+  0% {
+    -o-transform: translateX(0%);
+  }
+  15% {
+    -o-transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    -o-transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    -o-transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    -o-transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    -o-transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    -o-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+            transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+            transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+            transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+            transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+            transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shake {
+  50% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  0%,
+  100% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+}
+@keyframes shake {
+  50% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  0%,
+  100% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+}
+@-webkit-keyframes flip1 {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+  }
+  25% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+  }
+  50% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+  }
+}
+@keyframes flip1 {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+            transform: perspective(400px) rotateY(90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+            transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+            transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+            transform: perspective(400px) rotateY(0deg);
+  }
+}
+@-webkit-keyframes flip2 {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(-90deg);
+  }
+  25% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+  }
+  50% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+  }
+}
+@keyframes flip2 {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(-90deg);
+            transform: perspective(400px) rotateY(-90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+            transform: perspective(400px) rotateY(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+            transform: perspective(400px) rotateY(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+            transform: perspective(400px) rotateY(0deg);
+  }
+}
+@-webkit-keyframes shine {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes gif {
+  0% {
+    background-position: 0%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 200%;
+    opacity: 1;
+  }
+}
+@keyframes gif {
+  0% {
+    background-position: 0%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 200%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoom2 {
+  0% {
+    -webkit-transform: scale3d(0.98, 1, 1);
+    transform: scale3d(0.98, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(0.98, 1, 1);
+    transform: scale3d(0.98, 1, 1);
+  }
+}
+@keyframes zoom2 {
+  0% {
+    -webkit-transform: scale3d(0.98, 1, 1);
+    transform: scale3d(0.98, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(0.98, 1, 1);
+    transform: scale3d(0.98, 1, 1);
+  }
+}
+@-webkit-keyframes matrix {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.0015, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.0015, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: center center 0;
+    -webkit-transform-origin: center center 0;
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: center center 0;
+    -webkit-transform-origin: center center 0;
+  }
+}
+@keyframes matrix {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.0015, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.0015, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: center center 0;
+    -webkit-transform-origin: center center 0;
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: center center 0;
+    -webkit-transform-origin: center center 0;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes zoomIn2 {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoomIn2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes translateDown {
+  0%,
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+}
+@keyframes translateDown {
+  0%,
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+}
+@-webkit-keyframes translateLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+  }
+}
+@keyframes translateLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+  }
+}
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0.15rem);
+    -webkit-transform: translate(0, 0.15rem);
+    -moz-transform: translate(0, 0.15rem);
+    -ms-transform: translate(0, 0.15rem);
+    -o-transform: translate(0, 0.15rem);
+  }
+}
+@-webkit-keyframes arrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0.15rem);
+    -webkit-transform: translate(0, 0.15rem);
+    -moz-transform: translate(0, 0.15rem);
+    -ms-transform: translate(0, 0.15rem);
+    -o-transform: translate(0, 0.15rem);
+  }
+}
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes fylLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-moz-keyframes fylLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-ms-keyframes fylLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-o-keyframes fylLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fylLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes scaleSkill {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-moz-keyframes scaleSkill {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-ms-keyframes scaleSkill {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-o-keyframes scaleSkill {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes scaleSkill {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes btnShake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-moz-keyframes btnShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-ms-keyframes btnShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes btnShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes btnShake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes innerIn {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-moz-keyframes innerIn {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-ms-keyframes innerIn {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes innerIn {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes innerIn {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes BX_SprAniKey6 {
+  0% {
+    background-position: 0px 0px;
+  }
+  2.08% {
+    background-position: -415px 0px;
+  }
+  4.17% {
+    background-position: -830px 0px;
+  }
+  6.25% {
+    background-position: -1245px 0px;
+  }
+  8.33% {
+    background-position: -1660px 0px;
+  }
+  10.42% {
+    background-position: -2075px 0px;
+  }
+  12.50% {
+    background-position: -2490px 0px;
+  }
+  14.58% {
+    background-position: -2905px 0px;
+  }
+  16.67% {
+    background-position: -3320px 0px;
+  }
+  18.75% {
+    background-position: 0px -136px;
+  }
+  20.83% {
+    background-position: -415px -136px;
+  }
+  22.92% {
+    background-position: -830px -136px;
+  }
+  25.00% {
+    background-position: -1245px -136px;
+  }
+  27.08% {
+    background-position: -1660px -136px;
+  }
+  29.17% {
+    background-position: -2075px -136px;
+  }
+  31.25% {
+    background-position: -2490px -136px;
+  }
+  33.33% {
+    background-position: -2905px -136px;
+  }
+  35.42% {
+    background-position: -3320px -136px;
+  }
+  37.50% {
+    background-position: 0px -272px;
+  }
+  39.58% {
+    background-position: -415px -272px;
+  }
+  41.67% {
+    background-position: -830px -272px;
+  }
+  43.75% {
+    background-position: -1245px -272px;
+  }
+  45.83% {
+    background-position: -1660px -272px;
+  }
+  47.92% {
+    background-position: -2075px -272px;
+  }
+  50.00% {
+    background-position: -2490px -272px;
+  }
+  52.08% {
+    background-position: -2905px -272px;
+  }
+  54.17% {
+    background-position: -3320px -272px;
+  }
+  56.25% {
+    background-position: 0px -408px;
+  }
+  58.33% {
+    background-position: -415px -408px;
+  }
+  60.42% {
+    background-position: -830px -408px;
+  }
+  62.50% {
+    background-position: -1245px -408px;
+  }
+  64.58% {
+    background-position: -1660px -408px;
+  }
+  66.67% {
+    background-position: -2075px -408px;
+  }
+  68.75% {
+    background-position: -2490px -408px;
+  }
+  70.83% {
+    background-position: -2905px -408px;
+  }
+  72.92% {
+    background-position: -3320px -408px;
+  }
+  75.00% {
+    background-position: 0px -544px;
+  }
+  77.08% {
+    background-position: -415px -544px;
+  }
+  79.17% {
+    background-position: -830px -544px;
+  }
+  81.25% {
+    background-position: -1245px -544px;
+  }
+  83.33% {
+    background-position: -1660px -544px;
+  }
+  85.42% {
+    background-position: -2075px -544px;
+  }
+  87.50% {
+    background-position: -2490px -544px;
+  }
+  89.58% {
+    background-position: -2905px -544px;
+  }
+  91.67% {
+    background-position: -3320px -544px;
+  }
+  93.75% {
+    background-position: 0px -680px;
+  }
+  95.83% {
+    background-position: -415px -680px;
+  }
+  97.92% {
+    background-position: -830px -680px;
+  }
+  100% {
+    background-position: -830px -680px;
+  }
+}
+@keyframes BX_SprAniKey6 {
+  0% {
+    background-position: 0px 0px;
+  }
+  2.08% {
+    background-position: -415px 0px;
+  }
+  4.17% {
+    background-position: -830px 0px;
+  }
+  6.25% {
+    background-position: -1245px 0px;
+  }
+  8.33% {
+    background-position: -1660px 0px;
+  }
+  10.42% {
+    background-position: -2075px 0px;
+  }
+  12.50% {
+    background-position: -2490px 0px;
+  }
+  14.58% {
+    background-position: -2905px 0px;
+  }
+  16.67% {
+    background-position: -3320px 0px;
+  }
+  18.75% {
+    background-position: 0px -136px;
+  }
+  20.83% {
+    background-position: -415px -136px;
+  }
+  22.92% {
+    background-position: -830px -136px;
+  }
+  25.00% {
+    background-position: -1245px -136px;
+  }
+  27.08% {
+    background-position: -1660px -136px;
+  }
+  29.17% {
+    background-position: -2075px -136px;
+  }
+  31.25% {
+    background-position: -2490px -136px;
+  }
+  33.33% {
+    background-position: -2905px -136px;
+  }
+  35.42% {
+    background-position: -3320px -136px;
+  }
+  37.50% {
+    background-position: 0px -272px;
+  }
+  39.58% {
+    background-position: -415px -272px;
+  }
+  41.67% {
+    background-position: -830px -272px;
+  }
+  43.75% {
+    background-position: -1245px -272px;
+  }
+  45.83% {
+    background-position: -1660px -272px;
+  }
+  47.92% {
+    background-position: -2075px -272px;
+  }
+  50.00% {
+    background-position: -2490px -272px;
+  }
+  52.08% {
+    background-position: -2905px -272px;
+  }
+  54.17% {
+    background-position: -3320px -272px;
+  }
+  56.25% {
+    background-position: 0px -408px;
+  }
+  58.33% {
+    background-position: -415px -408px;
+  }
+  60.42% {
+    background-position: -830px -408px;
+  }
+  62.50% {
+    background-position: -1245px -408px;
+  }
+  64.58% {
+    background-position: -1660px -408px;
+  }
+  66.67% {
+    background-position: -2075px -408px;
+  }
+  68.75% {
+    background-position: -2490px -408px;
+  }
+  70.83% {
+    background-position: -2905px -408px;
+  }
+  72.92% {
+    background-position: -3320px -408px;
+  }
+  75.00% {
+    background-position: 0px -544px;
+  }
+  77.08% {
+    background-position: -415px -544px;
+  }
+  79.17% {
+    background-position: -830px -544px;
+  }
+  81.25% {
+    background-position: -1245px -544px;
+  }
+  83.33% {
+    background-position: -1660px -544px;
+  }
+  85.42% {
+    background-position: -2075px -544px;
+  }
+  87.50% {
+    background-position: -2490px -544px;
+  }
+  89.58% {
+    background-position: -2905px -544px;
+  }
+  91.67% {
+    background-position: -3320px -544px;
+  }
+  93.75% {
+    background-position: 0px -680px;
+  }
+  95.83% {
+    background-position: -415px -680px;
+  }
+  97.92% {
+    background-position: -830px -680px;
+  }
+  100% {
+    background-position: -830px -680px;
+  }
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei", STHeiTi, sans-serif;
+}
+/* CSS Document */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu,
+select {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: normal;
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+textarea,
+button,
+a,
+div,
+select {
+  border: 0;
+  outline: none;
+}
+input,
+textarea,
+button,
+a {
+  font: inherit;
+  color: inherit;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+input {
+  outline: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+button {
+  border: none;
+  outline: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+input,
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 999999s;
+  -webkit-transition: color 999999s ease-out, background-color 999999s ease-out;
+}
+#NIE-warning-dialog {
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+@font-face {
+  font-family: 'fzcjljt';
+  src: url('https://comm.res.easebar.com/js/nie/ref/fonts/fzssksjtdemi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fzssksjt';
+  src: url('https://nie.res.netease.com/comm/js/nie/ref/fonts/fzssksjt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'balthazar';
+  src: url(../fonts/Balthazar_88914f51.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'notoSans';
+  src: url(https://www.narakathegame.com/pc/zt/20211201141208963/font/NotoSans_61c3431e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'systm';
+  src: url(https://www.narakathegame.com/pc/zt/20211201141208963/font/SourceHanSansCNMedium_4abbfb49.ttf) format('truetype');
+}
+@font-face {
+  font-family: iconcopyright;
+  src: url(https://nie.res.netease.com/comm/js/nie/util/leihuo_copyright/css/iconfont_b90be6b.eot?t=1582884893329);
+  src: url(https://nie.res.netease.com/comm/js/nie/util/leihuo_copyright/css/iconfont_b90be6b.eot?t=1582884893329#iefix) format('embedded-opentype'), url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANEAAsAAAAAB7QAAAL4AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDFAqCdIJuATYCJAMQCwoABCAFhG0HTBvcBsguMXY9EIkQVEszmWBVcaq/O3cKRHw0gu/X0H33310QFIOKZ0sqKbEC1mllVStNp8Yjq1aY/N+c/u06JLm3L4clOWQVaGsDlzQNvuuV9YTam59wmzGAjkACySlMwIXK+rJ1B9uu91nGn2YxDiTiDnLFy18cjmsLzgfKZa5BXdQFGAe0dW9skyyQgDwV21owbYeIvzg5TqDdmGFVu4vrEtRLNC4Qty1TgfqGU0oj0io0A0tTvIRaa/W8+hTAi+z78RfiUU+lLmjq4a0FHaZ/6FPinwuJGp4dp4exioIVIIkrg8ZzSBFcQbR7/UPWgEYK1VH2/38yJKbPb1hoyx+vIhqU3gnWESr86I+Ylegf5AKi/0hTwZexpBVtuAK8QtKRY+hs7OxsZP/Oq5eV6E6SMpDT6zTwJCQnPSmPJypDQmlaKEMoI0cyKTElFwaTbv2yNJCUhxKpy0POJ7kypiz5Uk6vd6n779slb29kl2kJPS6qYprs7RHwtlQ6uKq9+fs+dc49MFFwm+/LXpwly+cz4RQ5Pf83iRi6UeSIMbPC11zntGyeH2rqSPAOdTq46uvuA5x+KtsEs/BJQnn6t/3Gytvj2sa/6kvw5kR6wV5mpvVtTMGfxFpYlj6HVJkuN2IG6WkG4Y357ezhFFn7PR4hHlqcTmg1VEGlxSgUrWYQiVmBWod1aLTagHbLllZ3GMAQkW1YsiEg9NqBSrfXUPQ6QyTmAWrDPqHRGwTaHUXXlh3mwmqcY1ThVEe1hJbme4bU8MY8U6BmzlFYnZMREpRlLQ/GwtF2ZIl6lB0xI5s345wbaDDfxUVxGnUcHwPmZ6jGw2nOg9FIxBh6UljzXWi0g6EUHKVDqhJk0fg8RlKda+x8XkCZchwKNlHSo06gmCyrfhQTFl2AWBJ6i0o+5ZysPFMcxxmQgfG50KLQUw4HfSgYHpRBabiw9AZ/YFREqWQsFYavF7ufcA20owsyqiiRUWt/EoxoFtMcGmvW/YJXK6w1c4qnWgA=') format('woff2'), url(https://nie.res.netease.com/comm/js/nie/util/leihuo_copyright/css/iconfont_87b8b49.woff?t=1582884893329) format('woff'), url(https://nie.res.netease.com/comm/js/nie/util/leihuo_copyright/css/iconfont_f9817d6.ttf?t=1582884893329) format('truetype'), url(https://nie.res.netease.com/comm/js/nie/util/leihuo_copyright/css/iconfont_7ef899f.svg?t=1582884893329#iconfont) format('svg');
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  color: #4c4c4c;
+  position: relative;
+}
+body .nav .logo {
+  display: none;
+}
+#app {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#g-nav .nav-wrap .nav-box .nav li.language {
+  display: none;
+}
+.no-webp .footer .content {background:#eeeeee}
+.webp .footer .content {background:#eeeeee}
+.footer .content {
+  width: 100%;
+  padding: 30px 0;
+  text-align: left;
+  font-size: 14px;
+  color: #444444;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .content .logo {
+  position: relative;
+  width: 113px;
+  height: 64px;
+  z-index: 99;
+  margin-right: 20px;
+}
+.footer .content .logo img {
+  width: 100%;
+}
+.footer .content p {
+  width: 600px;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.footer .content p a {
+  text-decoration: underline;
+}
+.btn-copyright {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #666;
+  pointer-events: all;
+  text-decoration: none;
+  z-index: 102;
+}
+.btn-copyright .iconcopyright {
+  font-family: iconcopyright !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-copyright i {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  color: #666;
+}
+.btn-copyright i::before {
+  content: "\E6F1";
+}
+.btn-copyright:hover {
+  color: #444;
+}
+.btn-copyright:hover i {
+  color: #444;
+}
+.btn-copyright.active i::before {
+  content: "\E6F2";
+}
+.mpurs__dialog__background {
+  z-index: 999;
+}
+.mpurs__dialog__container {
+  width: 500px;
+}
+.no-webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_e0850ae3.jpg) no-repeat center top / cover}
+.webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_e0850ae3.webp) no-repeat center top / cover}
+.container-index {
+  position: relative;
+  width: 100%;
+  height: 4320px;
+  overflow: hidden;
+}
+.container-index .part-1 {
+  position: relative;
+  height: 1197px;
+  overflow: hidden;
+}
+.container-index .part-1 .inner-box {
+  position: absolute;
+  left: 50%;
+  width: 45.2%;
+  margin-top: 254px;
+  margin-left: -107px;
+}
+.no-webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_28dc5871.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_28dc5871.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-1 .logo {background-position:center}
+.webp .container-index .part-1 .logo {background-position:center}
+.no-webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .logo {background-size:100%}
+.webp .container-index .part-1 .logo {background-size:100%}
+.container-index .part-1 .logo {
+  display: block;
+  margin: auto;
+  width: 122px;
+  height: 205px;
+}
+.no-webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_00dd0cf4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_00dd0cf4.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-1 .slogan {background-position:center}
+.webp .container-index .part-1 .slogan {background-position:center}
+.no-webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .slogan {background-size:100%}
+.webp .container-index .part-1 .slogan {background-size:100%}
+.container-index .part-1 .slogan {
+  margin: -92px auto 0;
+  width: 681px;
+  height: 202px;
+}
+.container-index .part-1 .txt {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'systm';
+  color: #424242;
+  margin-top: 22px;
+}
+.container-index .part-1 .btns {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  margin-top: 60px;
+}
+.container-index .part-1 .btns a {
+  margin: 0 6px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.no-webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-1 .btns .appstore {background-position:center}
+.webp .container-index .part-1 .btns .appstore {background-position:center}
+.no-webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .appstore {background-size:100%}
+.webp .container-index .part-1 .btns .appstore {background-size:100%}
+.container-index .part-1 .btns .appstore {
+  width: 274px;
+  height: 81px;
+}
+.no-webp .container-index .part-1 .btns .appstore:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1-h_72e126aa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-1 .btns .appstore:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1-h_72e126aa.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-1 .btns .appstore:hover {background-position:center}
+.webp .container-index .part-1 .btns .appstore:hover {background-position:center}
+.no-webp .container-index .part-1 .btns .appstore:hover {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .appstore:hover {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .appstore:hover {background-size:100%}
+.webp .container-index .part-1 .btns .appstore:hover {background-size:100%}
+.container-index .part-1 .btns .appstore:hover {
+  width: 274px;
+  height: 81px;
+}
+.no-webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-1 .btns .googleplay {background-position:center}
+.webp .container-index .part-1 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .googleplay {background-size:100%}
+.webp .container-index .part-1 .btns .googleplay {background-size:100%}
+.container-index .part-1 .btns .googleplay {
+  width: 274px;
+  height: 81px;
+}
+.no-webp .container-index .part-1 .btns .googleplay:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1-h_399d1355.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-1 .btns .googleplay:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1-h_399d1355.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-1 .btns .googleplay:hover {background-position:center}
+.webp .container-index .part-1 .btns .googleplay:hover {background-position:center}
+.no-webp .container-index .part-1 .btns .googleplay:hover {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .googleplay:hover {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .googleplay:hover {background-size:100%}
+.webp .container-index .part-1 .btns .googleplay:hover {background-size:100%}
+.container-index .part-1 .btns .googleplay:hover {
+  width: 274px;
+  height: 81px;
+}
+.container-index .part-2 {
+  position: relative;
+  width: 100%;
+  height: 721px;
+}
+.container-index .part-2 .inner-box {
+  position: relative;
+  width: 80.3%;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container-index .part-2 .inner-box .txt {
+  margin-top: 120px;
+  margin-right: 95px;
+}
+.container-index .part-2 .inner-box .txt .tit {
+  font-size: 80px;
+  color: #bd8729;
+  font-family: 'balthazar';
+  text-transform: uppercase;
+  text-align: center;
+}
+.container-index .part-2 .inner-box .txt .text {
+  font-size: 24px;
+  font-family: 'systm';
+  line-height: 40px;
+  color: #eaeaea;
+  margin-top: 55px;
+}
+.container-index .part-2 .inner-box .v-box {
+  position: relative;
+  width: 748px;
+  height: 825px;
+  margin-top: -20px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: -35px;
+}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -0px;
+
+  background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -0px;
+
+  background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-position:-0px -0px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-position:-0px -0px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+.container-index .part-2 .inner-box .v-box .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 393px;
+  height: 763px;
+}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-397px -767px;
+
+  background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-397px -767px;
+
+  background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-397px -767px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-397px -767px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+.container-index .part-2 .inner-box .v-box .img2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 393px;
+  height: 763px;
+}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+.container-index .part-2 .inner-box .v-box .img2 .v-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -31.5px;
+  margin-left: -31.5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 63px;
+  height: 63px;
+}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn-h_a564f317.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn-h_a564f317.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-position:center}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-position:center}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-repeat:no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-size:100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background-size:100%}
+.container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {
+  width: 63px;
+  height: 63px;
+}
+.container-index .part-3 {
+  position: relative;
+  width: 100%;
+  height: 972px;
+}
+.container-index .part-3 .inner-box {
+  position: relative;
+  width: 80.3%;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.container-index .part-3 .inner-box .txt {
+  margin-top: 390px;
+}
+.container-index .part-3 .inner-box .txt .tit {
+  font-size: 80px;
+  color: #bd8729;
+  font-family: 'balthazar';
+  text-transform: uppercase;
+  text-align: center;
+}
+.container-index .part-3 .inner-box .txt .text {
+  font-size: 24px;
+  font-family: 'systm';
+  line-height: 40px;
+  color: #424242;
+  margin-top: 55px;
+}
+.container-index .part-3 .inner-box .imgs {
+  position: relative;
+  width: 748px;
+  height: 763px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 110px;
+  margin-top: 160px;
+  margin-left: -35px;
+}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -767px;
+
+  background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -767px;
+
+  background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-position:-0px -767px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-position:-0px -767px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+.container-index .part-3 .inner-box .imgs .l {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 393px;
+  height: 763px;
+}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-397px -0px;
+
+  background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-397px -0px;
+
+  background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-position:-397px -0px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-position:-397px -0px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+.container-index .part-3 .inner-box .imgs .r {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 393px;
+  height: 763px;
+}
+.container-index .part-4 {
+  position: relative;
+  height: 950px;
+  overflow: hidden;
+}
+.container-index .part-4 .inner-box {
+  position: absolute;
+  left: 200px;
+  width: 65%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container-index .part-4 .inner-box .txt {
+  margin-right: 55px;
+  margin-top: 310px;
+}
+.container-index .part-4 .inner-box .txt .tit {
+  font-family: 'balthazar';
+  font-size: 80px;
+  color: #bd8729;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container-index .part-4 .inner-box .txt .text {
+  font-size: 24px;
+  color: #424242;
+  font-family: 'systm';
+  line-height: 40px;
+  margin-top: 48px;
+}
+.container-index .part-4 .inner-box .imgs {
+  position: relative;
+  width: 748px;
+  height: 831px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: -35px;
+}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-794px -0px;
+
+  background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-794px -0px;
+
+  background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-position:-794px -0px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-position:-794px -0px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+.container-index .part-4 .inner-box .imgs .l {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 393px;
+  height: 763px;
+}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1191px -0px;
+
+  background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1191px -0px;
+
+  background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-position:-1191px -0px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-position:-1191px -0px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+.container-index .part-4 .inner-box .imgs .r {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 393px;
+  height: 763px;
+}
+.container-index .part-5 {
+  position: relative;
+  height: 482px;
+  overflow: hidden;
+}
+.container-index .part-5 .tit {
+  font-family: 'balthazar';
+  font-size: 80px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 86px;
+}
+.container-index .part-5 .btns {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  margin-top: 56px;
+}
+.container-index .part-5 .btns a {
+  margin: 0 11px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.no-webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-5 .btns .appstore {background-position:center}
+.webp .container-index .part-5 .btns .appstore {background-position:center}
+.no-webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .appstore {background-size:100%}
+.webp .container-index .part-5 .btns .appstore {background-size:100%}
+.container-index .part-5 .btns .appstore {
+  width: 274px;
+  height: 81px;
+}
+.no-webp .container-index .part-5 .btns .appstore:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1-h_72e126aa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-5 .btns .appstore:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1-h_72e126aa.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-5 .btns .appstore:hover {background-position:center}
+.webp .container-index .part-5 .btns .appstore:hover {background-position:center}
+.no-webp .container-index .part-5 .btns .appstore:hover {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .appstore:hover {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .appstore:hover {background-size:100%}
+.webp .container-index .part-5 .btns .appstore:hover {background-size:100%}
+.container-index .part-5 .btns .appstore:hover {
+  width: 274px;
+  height: 81px;
+}
+.no-webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-5 .btns .googleplay {background-position:center}
+.webp .container-index .part-5 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .googleplay {background-size:100%}
+.webp .container-index .part-5 .btns .googleplay {background-size:100%}
+.container-index .part-5 .btns .googleplay {
+  width: 274px;
+  height: 81px;
+}
+.no-webp .container-index .part-5 .btns .googleplay:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1-h_399d1355.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.webp .container-index .part-5 .btns .googleplay:hover {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1-h_399d1355.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%}
+.no-webp .container-index .part-5 .btns .googleplay:hover {background-position:center}
+.webp .container-index .part-5 .btns .googleplay:hover {background-position:center}
+.no-webp .container-index .part-5 .btns .googleplay:hover {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .googleplay:hover {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .googleplay:hover {background-size:100%}
+.webp .container-index .part-5 .btns .googleplay:hover {background-size:100%}
+.container-index .part-5 .btns .googleplay:hover {
+  width: 274px;
+  height: 81px;
+}
+@media screen and (max-width: 1660px) {
+  .container-index .part-2 .inner-box {
+    width: 90%;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 50px;
+  }
+  .container-index .part-3 .inner-box {
+    width: 90%;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 50px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    margin-right: 20px;
+  }
+  .container-index .part-4 .inner-box {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container-index .part-2 .inner-box {
+    width: 90%;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 50px;
+  }
+  .container-index .part-3 .inner-box {
+    width: 90%;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 50px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    margin-right: 20px;
+  }
+  .container-index .part-4 .inner-box {
+    width: 80%;
+    left: 100px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container-index .part-1 .inner-box {
+    width: 60%;
+    margin-left: -215px;
+  }
+  .container-index .part-2 .inner-box {
+    width: 95%;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 50px;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    line-height: 35px;
+    font-size: 22px;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  .container-index .part-3 .inner-box {
+    width: 95%;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 50px;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    line-height: 35px;
+    font-size: 22px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    margin-right: 20px;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  .container-index .part-4 .inner-box {
+    width: 90%;
+    left: 100px;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin-right: 10px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    width: 400px;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    line-height: 35px;
+    font-size: 22px;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+@media screen and (max-width: 1130px) {
+  .container-index .part-1 .inner-box {
+    width: 60%;
+    margin-left: -215px;
+  }
+  .container-index .part-2 .inner-box {
+    width: 95%;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-right: -30px;
+    margin-top: 50px;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 45px;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    line-height: 34px;
+    font-size: 20px;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-right: -70px;
+  }
+  .container-index .part-3 .inner-box {
+    width: 95%;
+  }
+  .container-index .part-3 .inner-box .txt {
+    margin-left: -100px;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 45px;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    line-height: 34px;
+    font-size: 20px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    margin-right: 0;
+    margin-left: -50px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .container-index .part-3 .inner-box .imgs .r {
+    right: 30px;
+  }
+  .container-index .part-4 .inner-box {
+    width: 90%;
+    left: 100px;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin-right: -50px;
+  }
+  .container-index .part-4 .inner-box .txt .tit {
+    font-size: 45px;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    line-height: 34px;
+    font-size: 20px;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .container-index .part-4 .inner-box .imgs .r {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+.no-webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg-1024_2f4f8d61.jpg) no-repeat center top / cover}
+.webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg-1024_2f4f8d61.webp) no-repeat center top / cover}
+  .container-index {
+    position: relative;
+    width: 100%;
+    height: 4320px;
+    overflow: hidden;
+  }
+  .container-index .part-1 {
+    position: relative;
+    height: 1177px;
+    overflow: hidden;
+  }
+  .container-index .part-1 .inner-box {
+    position: absolute;
+    left: 50%;
+    width: 681px;
+    margin-top: 170px;
+  }
+.no-webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .logo {background-position:center}
+.webp .container-index .part-1 .logo {background-position:center}
+.no-webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .logo {background-size:100%}
+.webp .container-index .part-1 .logo {background-size:100%}
+  .container-index .part-1 .logo {
+    display: block;
+    margin: auto;
+    width: 122px;
+    height: 205px;
+  }
+.no-webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .slogan {background-position:center}
+.webp .container-index .part-1 .slogan {background-position:center}
+.no-webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .slogan {background-size:100%}
+.webp .container-index .part-1 .slogan {background-size:100%}
+  .container-index .part-1 .slogan {
+    margin: -92px auto 0;
+    width: 681px;
+    height: 202px;
+  }
+  .container-index .part-1 .txt {
+    width: 470px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'systm';
+    color: #424242;
+    margin: 22px auto 0;
+  }
+  .container-index .part-1 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 60px;
+  }
+  .container-index .part-1 .btns a {
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .appstore {background-position:center}
+.webp .container-index .part-1 .btns .appstore {background-position:center}
+.no-webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .appstore {background-size:100%}
+.webp .container-index .part-1 .btns .appstore {background-size:100%}
+  .container-index .part-1 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .googleplay {background-position:center}
+.webp .container-index .part-1 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .googleplay {background-size:100%}
+.webp .container-index .part-1 .btns .googleplay {background-size:100%}
+  .container-index .part-1 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+  .container-index .part-2 {
+    position: relative;
+    width: 100%;
+    height: 721px;
+  }
+  .container-index .part-2 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-top: 190px;
+    margin-right: 0;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 52px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 28px;
+    color: #eaeaea;
+    margin-top: 55px;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    position: relative;
+    width: 639px;
+    height: 704px;
+    margin-top: 92px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -30px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+  .container-index .part-2 .inner-box .v-box .img2 .v-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -42.5px;
+    margin-left: -42.5px;
+    width: 63px;
+    height: 63px;
+  }
+  .container-index .part-3 {
+    position: relative;
+    width: 100%;
+    height: 972px;
+  }
+  .container-index .part-3 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container-index .part-3 .inner-box .txt {
+    margin-top: 490px;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 52px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 28px;
+    color: #424242;
+    margin-top: 55px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    position: relative;
+    width: 626px;
+    height: 651px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 110px;
+    margin-top: 290px;
+    margin-left: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 329px;
+    height: 651px;
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-4 {
+    position: relative;
+    height: 950px;
+    overflow: hidden;
+  }
+  .container-index .part-4 .inner-box {
+    position: static;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin-right: 0;
+    margin-top: 380px;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    width: auto;
+  }
+  .container-index .part-4 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 52px;
+    color: #bd8729;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    color: #424242;
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 25px;
+    margin-top: 48px;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    position: relative;
+    width: 639px;
+    height: 708px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -35px;
+    margin-top: 200px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 342px;
+    height: 651px;
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-5 {
+    position: relative;
+    height: 482px;
+    overflow: hidden;
+  }
+  .container-index .part-5 .tit {
+    font-family: 'balthazar';
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 86px;
+  }
+  .container-index .part-5 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 56px;
+  }
+  .container-index .part-5 .btns a {
+    margin: 0 11px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .appstore {background-position:center}
+.webp .container-index .part-5 .btns .appstore {background-position:center}
+.no-webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .appstore {background-size:100%}
+.webp .container-index .part-5 .btns .appstore {background-size:100%}
+  .container-index .part-5 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .googleplay {background-position:center}
+.webp .container-index .part-5 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .googleplay {background-size:100%}
+.webp .container-index .part-5 .btns .googleplay {background-size:100%}
+  .container-index .part-5 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+}
+@media screen and (max-width: 990px) {
+.no-webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg-1024_2f4f8d61.jpg) no-repeat center top / cover}
+.webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg-1024_2f4f8d61.webp) no-repeat center top / cover}
+  .container-index {
+    position: relative;
+    width: 100%;
+    height: 4320px;
+    overflow: hidden;
+  }
+  .container-index .part-1 {
+    position: relative;
+    height: 1177px;
+    overflow: hidden;
+  }
+  .container-index .part-1 .inner-box {
+    position: absolute;
+    left: 50%;
+    width: 681px;
+    margin-top: 170px;
+  }
+.no-webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .logo {background-position:center}
+.webp .container-index .part-1 .logo {background-position:center}
+.no-webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .logo {background-size:100%}
+.webp .container-index .part-1 .logo {background-size:100%}
+  .container-index .part-1 .logo {
+    display: block;
+    margin: auto;
+    width: 122px;
+    height: 205px;
+  }
+.no-webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .slogan {background-position:center}
+.webp .container-index .part-1 .slogan {background-position:center}
+.no-webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .slogan {background-size:100%}
+.webp .container-index .part-1 .slogan {background-size:100%}
+  .container-index .part-1 .slogan {
+    margin: -92px auto 0;
+    width: 681px;
+    height: 202px;
+  }
+  .container-index .part-1 .txt {
+    width: 470px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'systm';
+    color: #424242;
+    margin: 22px auto 0;
+  }
+  .container-index .part-1 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 60px;
+  }
+  .container-index .part-1 .btns a {
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .appstore {background-position:center}
+.webp .container-index .part-1 .btns .appstore {background-position:center}
+.no-webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .appstore {background-size:100%}
+.webp .container-index .part-1 .btns .appstore {background-size:100%}
+  .container-index .part-1 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .googleplay {background-position:center}
+.webp .container-index .part-1 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .googleplay {background-size:100%}
+.webp .container-index .part-1 .btns .googleplay {background-size:100%}
+  .container-index .part-1 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+  .container-index .part-2 {
+    position: relative;
+    width: 100%;
+    height: 721px;
+  }
+  .container-index .part-2 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-top: 190px;
+    margin-right: 0;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 45px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 26px;
+    color: #eaeaea;
+    margin-top: 55px;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    position: relative;
+    width: 639px;
+    height: 704px;
+    margin-top: 92px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -75px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+  .container-index .part-2 .inner-box .v-box .img2 .v-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -42.5px;
+    margin-left: -42.5px;
+    width: 63px;
+    height: 63px;
+  }
+  .container-index .part-3 {
+    position: relative;
+    width: 100%;
+    height: 972px;
+  }
+  .container-index .part-3 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container-index .part-3 .inner-box .txt {
+    margin-top: 490px;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 45px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 26px;
+    color: #424242;
+    margin-top: 55px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    position: relative;
+    width: 626px;
+    height: 651px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 70px;
+    margin-top: 290px;
+    margin-left: -50px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 329px;
+    height: 651px;
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-4 {
+    position: relative;
+    height: 950px;
+    overflow: hidden;
+  }
+  .container-index .part-4 .inner-box {
+    position: static;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin-right: 0;
+    margin-top: 380px;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    width: auto;
+  }
+  .container-index .part-4 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 45px;
+    color: #bd8729;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    color: #424242;
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 25px;
+    margin-top: 48px;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    position: relative;
+    width: 639px;
+    height: 708px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -60px;
+    margin-top: 200px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 342px;
+    height: 651px;
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-5 {
+    position: relative;
+    height: 482px;
+    overflow: hidden;
+  }
+  .container-index .part-5 .tit {
+    font-family: 'balthazar';
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 86px;
+  }
+  .container-index .part-5 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 56px;
+  }
+  .container-index .part-5 .btns a {
+    margin: 0 11px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store2_cf0e1b20.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store2_cf0e1b20.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .appstore {background-position:center}
+.webp .container-index .part-5 .btns .appstore {background-position:center}
+.no-webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .appstore {background-size:100%}
+.webp .container-index .part-5 .btns .appstore {background-size:100%}
+  .container-index .part-5 .btns .appstore {
+    width: 351px;
+    height: 103px;
+  }
+.no-webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play2_b3cc8b62.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play2_b3cc8b62.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .googleplay {background-position:center}
+.webp .container-index .part-5 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .googleplay {background-size:100%}
+.webp .container-index .part-5 .btns .googleplay {background-size:100%}
+  .container-index .part-5 .btns .googleplay {
+    width: 351px;
+    height: 103px;
+  }
+}
+@media screen and (max-width: 900px) {
+.no-webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_37299f97.jpg) no-repeat center top / cover}
+.webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_37299f97.webp) no-repeat center top / cover}
+  .container-index {
+    position: relative;
+    width: 100%;
+    height: 4320px;
+    overflow: hidden;
+  }
+  .container-index .part-1 {
+    position: relative;
+    height: 1151px;
+    overflow: hidden;
+  }
+  .container-index .part-1 .inner-box {
+    position: absolute;
+    left: 50%;
+    width: 681px;
+    margin-top: 170px;
+    margin-left: -340.5px;
+  }
+.no-webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .logo {background-position:center}
+.webp .container-index .part-1 .logo {background-position:center}
+.no-webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .logo {background-size:100%}
+.webp .container-index .part-1 .logo {background-size:100%}
+  .container-index .part-1 .logo {
+    display: block;
+    margin: auto;
+    width: 122px;
+    height: 205px;
+  }
+.no-webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .slogan {background-position:center}
+.webp .container-index .part-1 .slogan {background-position:center}
+.no-webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .slogan {background-size:100%}
+.webp .container-index .part-1 .slogan {background-size:100%}
+  .container-index .part-1 .slogan {
+    margin: -92px auto 0;
+    width: 681px;
+    height: 202px;
+  }
+  .container-index .part-1 .txt {
+    width: 470px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'systm';
+    color: #424242;
+    margin: 22px auto 0;
+  }
+  .container-index .part-1 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 60px;
+  }
+  .container-index .part-1 .btns a {
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .appstore {background-position:center}
+.webp .container-index .part-1 .btns .appstore {background-position:center}
+.no-webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .appstore {background-size:100%}
+.webp .container-index .part-1 .btns .appstore {background-size:100%}
+  .container-index .part-1 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .googleplay {background-position:center}
+.webp .container-index .part-1 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .googleplay {background-size:100%}
+.webp .container-index .part-1 .btns .googleplay {background-size:100%}
+  .container-index .part-1 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+  .container-index .part-2 {
+    position: relative;
+    width: 100%;
+    height: 721px;
+  }
+  .container-index .part-2 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-top: 140px;
+    margin-right: -20px;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 42px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 32px;
+    color: #eaeaea;
+    margin-top: 50px;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    position: relative;
+    width: 619px;
+    height: 704px;
+    margin-top: 125px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -75px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+  .container-index .part-2 .inner-box .v-box .img2 .v-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -42.5px;
+    margin-left: -42.5px;
+    width: 63px;
+    height: 63px;
+  }
+  .container-index .part-3 {
+    position: relative;
+    width: 100%;
+    height: 972px;
+  }
+  .container-index .part-3 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container-index .part-3 .inner-box .txt {
+    margin-top: 450px;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 42px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 32px;
+    color: #424242;
+    margin-top: 55px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    position: relative;
+    width: 606px;
+    height: 651px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 70px;
+    margin-top: 290px;
+    margin-left: -50px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 329px;
+    height: 651px;
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-4 {
+    position: relative;
+    height: 950px;
+    overflow: hidden;
+  }
+  .container-index .part-4 .inner-box {
+    position: static;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin-right: 0;
+    margin-top: 380px;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    width: auto;
+  }
+  .container-index .part-4 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 42px;
+    color: #bd8729;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    color: #424242;
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 32px;
+    margin-top: 48px;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    position: relative;
+    width: 619px;
+    height: 708px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -60px;
+    margin-top: 200px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 342px;
+    height: 651px;
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-5 {
+    position: relative;
+    height: 482px;
+    overflow: hidden;
+  }
+  .container-index .part-5 .tit {
+    font-family: 'balthazar';
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 86px;
+  }
+  .container-index .part-5 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 56px;
+  }
+  .container-index .part-5 .btns a {
+    margin: 0 11px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .appstore {background-position:center}
+.webp .container-index .part-5 .btns .appstore {background-position:center}
+.no-webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .appstore {background-size:100%}
+.webp .container-index .part-5 .btns .appstore {background-size:100%}
+  .container-index .part-5 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .googleplay {background-position:center}
+.webp .container-index .part-5 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .googleplay {background-size:100%}
+.webp .container-index .part-5 .btns .googleplay {background-size:100%}
+  .container-index .part-5 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+}
+@media screen and (max-width: 840px) {
+.no-webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_37299f97.jpg) no-repeat center top / cover}
+.webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_37299f97.webp) no-repeat center top / cover}
+  .container-index {
+    position: relative;
+    width: 100%;
+    height: 4320px;
+    overflow: hidden;
+  }
+  .container-index .part-1 {
+    position: relative;
+    height: 1151px;
+    overflow: hidden;
+  }
+  .container-index .part-1 .inner-box {
+    position: absolute;
+    left: 50%;
+    width: 681px;
+    margin-top: 170px;
+    margin-left: -340.5px;
+  }
+.no-webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .logo {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_a2b1ad0a.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .logo {background-position:center}
+.webp .container-index .part-1 .logo {background-position:center}
+.no-webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.webp .container-index .part-1 .logo {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .logo {background-size:100%}
+.webp .container-index .part-1 .logo {background-size:100%}
+  .container-index .part-1 .logo {
+    display: block;
+    margin: auto;
+    width: 122px;
+    height: 205px;
+  }
+.no-webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .slogan {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_bf31fa81.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .slogan {background-position:center}
+.webp .container-index .part-1 .slogan {background-position:center}
+.no-webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.webp .container-index .part-1 .slogan {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .slogan {background-size:100%}
+.webp .container-index .part-1 .slogan {background-size:100%}
+  .container-index .part-1 .slogan {
+    margin: -92px auto 0;
+    width: 681px;
+    height: 202px;
+  }
+  .container-index .part-1 .txt {
+    width: 470px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'systm';
+    color: #424242;
+    margin: 22px auto 0;
+  }
+  .container-index .part-1 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 60px;
+  }
+  .container-index .part-1 .btns a {
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .appstore {background-position:center}
+.webp .container-index .part-1 .btns .appstore {background-position:center}
+.no-webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .appstore {background-size:100%}
+.webp .container-index .part-1 .btns .appstore {background-size:100%}
+  .container-index .part-1 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-1 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-1 .btns .googleplay {background-position:center}
+.webp .container-index .part-1 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-1 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-1 .btns .googleplay {background-size:100%}
+.webp .container-index .part-1 .btns .googleplay {background-size:100%}
+  .container-index .part-1 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+  .container-index .part-2 {
+    position: relative;
+    width: 100%;
+    height: 721px;
+  }
+  .container-index .part-2 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin-top: 140px;
+    margin-right: -20px;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-size: 37px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 29px;
+    color: #eaeaea;
+    margin-top: 50px;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    position: relative;
+    width: 610px;
+    height: 704px;
+    margin-top: 100px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -125px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1141px -767px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.webp .container-index .part-2 .inner-box .v-box .img {background-position:-1141px -767px}
+.no-webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-size:2970px 2855px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-position:-0px -1534px}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background-repeat:no-repeat}
+  .container-index .part-2 .inner-box .v-box .img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 343px;
+    height: 666px;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_b1e52e38.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-position:center}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-repeat:no-repeat}
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background-size:100%}
+  .container-index .part-2 .inner-box .v-box .img2 .v-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -42.5px;
+    margin-left: -42.5px;
+    width: 63px;
+    height: 63px;
+  }
+  .container-index .part-3 {
+    position: relative;
+    width: 100%;
+    height: 972px;
+  }
+  .container-index .part-3 .inner-box {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container-index .part-3 .inner-box .txt {
+    margin-top: 450px;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-size: 37px;
+    color: #bd8729;
+    font-family: 'balthazar';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 32px;
+    color: #424242;
+    margin-top: 55px;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    position: relative;
+    width: 606px;
+    height: 651px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 40px;
+    margin-top: 290px;
+    margin-left: -100px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-1025px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.webp .container-index .part-3 .inner-box .imgs .l {background-position:-1025px -2204px}
+.no-webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 329px;
+    height: 651px;
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-694px -1534px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.webp .container-index .part-3 .inner-box .imgs .r {background-position:-694px -1534px}
+.no-webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-3 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-3 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-4 {
+    position: relative;
+    height: 950px;
+    overflow: hidden;
+  }
+  .container-index .part-4 .inner-box {
+    position: static;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin-right: 0;
+    margin-top: 380px;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    width: auto;
+  }
+  .container-index .part-4 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 37px;
+    color: #bd8729;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    color: #424242;
+    font-size: 18px;
+    font-family: 'systm';
+    line-height: 32px;
+    margin-top: 48px;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    position: relative;
+    width: 619px;
+    height: 708px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: -105px;
+    margin-top: 200px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-0px -2204px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.webp .container-index .part-4 .inner-box .imgs .l {background-position:-0px -2204px}
+.no-webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .l {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 342px;
+    height: 651px;
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.png);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/sprite-09a9ab_09a9ab3c.webp);background-size:2970px 2855px;
+background-position:-2282px -1310px;
+
+    background-repeat: no-repeat}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-size:2970px 2855px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.webp .container-index .part-4 .inner-box .imgs .r {background-position:-2282px -1310px}
+.no-webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+.webp .container-index .part-4 .inner-box .imgs .r {background-repeat:no-repeat}
+  .container-index .part-4 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 342px;
+    height: 651px;
+  }
+  .container-index .part-5 {
+    position: relative;
+    height: 482px;
+    overflow: hidden;
+  }
+  .container-index .part-5 .tit {
+    font-family: 'balthazar';
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 86px;
+  }
+  .container-index .part-5 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 56px;
+  }
+  .container-index .part-5 .btns a {
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.no-webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .appstore {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/app-store1_7aec9c5b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .appstore {background-position:center}
+.webp .container-index .part-5 .btns .appstore {background-position:center}
+.no-webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .appstore {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .appstore {background-size:100%}
+.webp .container-index .part-5 .btns .appstore {background-size:100%}
+  .container-index .part-5 .btns .appstore {
+    width: 274px;
+    height: 81px;
+  }
+.no-webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.webp .container-index .part-5 .btns .googleplay {background-image:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/google-play1_e74603d1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%}
+.no-webp .container-index .part-5 .btns .googleplay {background-position:center}
+.webp .container-index .part-5 .btns .googleplay {background-position:center}
+.no-webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.webp .container-index .part-5 .btns .googleplay {background-repeat:no-repeat}
+.no-webp .container-index .part-5 .btns .googleplay {background-size:100%}
+.webp .container-index .part-5 .btns .googleplay {background-size:100%}
+  .container-index .part-5 .btns .googleplay {
+    width: 274px;
+    height: 81px;
+  }
+}
+@media screen and (max-width: 751px) {
+.no-webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_b0c04702.jpg) no-repeat center top / cover}
+.webp .container-index {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/bg_b0c04702.webp) no-repeat center top / cover}
+  .container-index {
+    width: 100%;
+    height: 64.96rem;
+  }
+  .container-index .inner-box {
+    position: static !important;
+    left: auto !important;
+    margin: 0 !important;
+    width: auto !important;
+    display: block !important;
+  }
+  .container-index .part-1 {
+    position: relative;
+    width: 100%;
+    height: 16.31rem;
+    overflow: hidden;
+  }
+.no-webp .container-index .part-1 .logo {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_93aa6ae9.png) no-repeat center / 100% 100%}
+.webp .container-index .part-1 .logo {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/logo_93aa6ae9.webp) no-repeat center / 100% 100%}
+  .container-index .part-1 .logo {
+    display: block;
+    margin: 1.94rem auto 0;
+    width: 1.64rem;
+    height: 2.77rem;
+  }
+.no-webp .container-index .part-1 .slogan {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_f8231635.png) no-repeat center / 100% 100%}
+.webp .container-index .part-1 .slogan {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/slogan_f8231635.webp) no-repeat center / 100% 100%}
+  .container-index .part-1 .slogan {
+    margin: -1.05rem auto 0;
+    width: 7.32rem;
+    height: 2.17rem;
+  }
+  .container-index .part-1 .txt {
+    width: 6.4rem;
+    margin: 0.25rem auto 0;
+    font-size: 0.28rem;
+    color: #424242;
+    line-height: 0.4rem;
+    text-align: center;
+    font-family: 'systm';
+  }
+  .container-index .part-1 .btns {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 11.86rem;
+    margin-top: 0;
+  }
+  .container-index .part-1 .btns a {
+    display: block;
+    margin: auto;
+  }
+.no-webp .container-index .part-1 .btns .appstore {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.png) no-repeat center / 100% 100%}
+.webp .container-index .part-1 .btns .appstore {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.webp) no-repeat center / 100% 100%}
+  .container-index .part-1 .btns .appstore {
+    width: 4.34rem;
+    height: 1.29rem;
+  }
+.no-webp .container-index .part-1 .btns .appstore:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.png) no-repeat center / 100% 100%}
+.webp .container-index .part-1 .btns .appstore:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.webp) no-repeat center / 100% 100%}
+  .container-index .part-1 .btns .appstore:hover {
+    width: 4.34rem;
+    height: 1.29rem;
+  }
+.no-webp .container-index .part-1 .btns .googleplay {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.png) no-repeat center / 100% 100%}
+.webp .container-index .part-1 .btns .googleplay {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.webp) no-repeat center / 100% 100%}
+  .container-index .part-1 .btns .googleplay {
+    width: 4.34rem;
+    height: 1.29rem;
+    margin-top: 0.24rem;
+  }
+.no-webp .container-index .part-1 .btns .googleplay:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.png) no-repeat center / 100% 100%}
+.webp .container-index .part-1 .btns .googleplay:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.webp) no-repeat center / 100% 100%}
+  .container-index .part-1 .btns .googleplay:hover {
+    width: 4.34rem;
+    height: 1.29rem;
+  }
+  .container-index .part-2 {
+    position: relative;
+    width: 100%;
+    height: 16.18rem;
+    overflow: hidden;
+  }
+  .container-index .part-2 .inner-box .txt {
+    margin: 0;
+  }
+  .container-index .part-2 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 0.6rem;
+    color: #bd8729;
+    text-align: center;
+    margin-top: 0.9rem;
+    text-transform: uppercase;
+  }
+  .container-index .part-2 .inner-box .txt .text {
+    width: 6.78rem;
+    margin: 45px auto 0;
+    font-size: 0.28rem;
+    color: #eaeaea;
+    font-family: 'systm';
+    line-height: 0.45rem;
+  }
+  .container-index .part-2 .inner-box .v-box {
+    position: absolute;
+    left: 50%;
+    bottom: 0.8rem;
+    margin-left: -3.245rem;
+    width: 6.49rem;
+    height: 9.53rem;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p2-img1_5480db00.png) no-repeat center / 100% 100%}
+.webp .container-index .part-2 .inner-box .v-box .img {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p2-img1_5480db00.webp) no-repeat center / 100% 100%}
+  .container-index .part-2 .inner-box .v-box .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.29rem;
+    height: 8.41rem;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p2-img2_48516f91.png) no-repeat center / 100% 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p2-img2_48516f91.webp) no-repeat center / 100% 100%}
+  .container-index .part-2 .inner-box .v-box .img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4.29rem;
+    height: 8.41rem;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_cad425c6.png) no-repeat center / 100% 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_cad425c6.webp) no-repeat center / 100% 100%}
+  .container-index .part-2 .inner-box .v-box .img2 .v-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.425rem;
+    margin-left: -0.425rem;
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+.no-webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_cad425c6.png) no-repeat center / 100% 100%}
+.webp .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/v-btn_cad425c6.webp) no-repeat center / 100% 100%}
+  .container-index .part-2 .inner-box .v-box .img2 .v-btn:hover {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+  .container-index .part-3 {
+    position: relative;
+    width: 100%;
+    height: 13.54rem;
+    overflow: hidden;
+  }
+  .container-index .part-3 .inner-box .txt {
+    margin: 0;
+  }
+  .container-index .part-3 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 0.6rem;
+    color: #bd8729;
+    text-align: center;
+    margin-top: 1.1rem;
+    text-transform: uppercase;
+  }
+  .container-index .part-3 .inner-box .txt .text {
+    width: 6.78rem;
+    margin: 45px auto 0;
+    font-size: 0.28rem;
+    color: #424242;
+    font-family: 'systm';
+    line-height: 0.45rem;
+  }
+  .container-index .part-3 .inner-box .imgs {
+    width: 7.5rem;
+    height: 8.07rem;
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    margin-left: -3.75rem;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p3-img1_d3ce6291.png) no-repeat center / 100% 100%}
+.webp .container-index .part-3 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p3-img1_d3ce6291.webp) no-repeat center / 100% 100%}
+  .container-index .part-3 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.08rem;
+    height: 8.06rem;
+  }
+.no-webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p3-img2_e723f73e.png) no-repeat center / 100% 100%}
+.webp .container-index .part-3 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p3-img2_e723f73e.webp) no-repeat center / 100% 100%}
+  .container-index .part-3 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.08rem;
+    height: 8.06rem;
+  }
+  .container-index .part-4 {
+    position: relative;
+    width: 100%;
+    height: 15.13rem;
+    overflow: hidden;
+  }
+  .container-index .part-4 .inner-box .txt {
+    margin: 0;
+  }
+  .container-index .part-4 .inner-box .txt .tit {
+    font-family: 'balthazar';
+    font-size: 0.6rem;
+    color: #bd8729;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .container-index .part-4 .inner-box .txt .text {
+    width: 6.78rem;
+    margin: 45px auto 0;
+    font-size: 0.28rem;
+    color: #424242;
+    font-family: 'systm';
+    line-height: 0.45rem;
+  }
+  .container-index .part-4 .inner-box .imgs {
+    width: 7.5rem;
+    height: 9.03rem;
+    position: absolute;
+    left: 50%;
+    bottom: 3.5rem;
+    margin-left: -3.75rem;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p4-img1_82ee418f.png) no-repeat center / 100% 100%}
+.webp .container-index .part-4 .inner-box .imgs .l {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p4-img1_82ee418f.webp) no-repeat center / 100% 100%}
+  .container-index .part-4 .inner-box .imgs .l {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4.08rem;
+    height: 8.06rem;
+  }
+.no-webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p4-img2_143b2765.png) no-repeat center / 100% 100%}
+.webp .container-index .part-4 .inner-box .imgs .r {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/p4-img2_143b2765.webp) no-repeat center / 100% 100%}
+  .container-index .part-4 .inner-box .imgs .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.08rem;
+    height: 8.06rem;
+  }
+  .container-index .part-5 {
+    position: relative;
+    width: 100%;
+    height: 3.8rem;
+    overflow: hidden;
+  }
+  .container-index .part-5 .tit {
+    font-family: 'balthazar';
+    font-size: 0.62rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+  }
+  .container-index .part-5 .btns {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-top: 0.55rem;
+  }
+  .container-index .part-5 .btns a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+.no-webp .container-index .part-5 .btns .appstore {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.png) no-repeat center / 100% 100%}
+.webp .container-index .part-5 .btns .appstore {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.webp) no-repeat center / 100% 100%}
+  .container-index .part-5 .btns .appstore {
+    width: 3.36rem;
+    height: 0.99rem;
+    margin-right: 0.17rem;
+  }
+.no-webp .container-index .part-5 .btns .appstore:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.png) no-repeat center / 100% 100%}
+.webp .container-index .part-5 .btns .appstore:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-appstore_d9d83569.webp) no-repeat center / 100% 100%}
+  .container-index .part-5 .btns .appstore:hover {
+    width: 3.36rem;
+    height: 0.99rem;
+  }
+.no-webp .container-index .part-5 .btns .googleplay {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.png) no-repeat center / 100% 100%}
+.webp .container-index .part-5 .btns .googleplay {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.webp) no-repeat center / 100% 100%}
+  .container-index .part-5 .btns .googleplay {
+    width: 3.36rem;
+    height: 0.99rem;
+  }
+.no-webp .container-index .part-5 .btns .googleplay:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.png) no-repeat center / 100% 100%}
+.webp .container-index .part-5 .btns .googleplay:hover {background:url(https://www.narakathegame.com/pc/zt/20211201141208963/img/btn-googleplay_41d8a3b8.webp) no-repeat center / 100% 100%}
+  .container-index .part-5 .btns .googleplay:hover {
+    width: 3.36rem;
+    height: 0.99rem;
+  }
+}
+@media screen and (max-width: 751px) {
+  #g-footer {
+    display: block;
+    width: 100%;
+  }
+  #g-footer .content {
+    display: block;
+  }
+  #g-footer .content .logo {
+    display: block;
+    margin: auto;
+  }
+  #g-footer .content p {
+    width: 6.5rem;
+  }
+  #g-footer .content .logo + div {
+    width: 100%;
+  }
+}
+[data-move] {
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+[data-move='0'] {
+  -webkit-transform: translate(0, 200px);
+  -moz-transform: translate(0, 200px);
+  -ms-transform: translate(0, 200px);
+  -o-transform: translate(0, 200px);
+  transform: translate(0, 200px);
+}
+[data-move='1'] {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.no-webp .pop_video_bg {background:rgba(0, 0, 0, 0.7)}
+
+.webp .pop_video_bg {background:rgba(0, 0, 0, 0.7)}
+
+.pop_video_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.pop_video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 600px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.pop_video #pop_vv > div {
+  max-width: 100%;
+}
+.pop_video video {
+  display: block;
+  width: auto;
+  height: 90%;
+  margin: 5% auto 0;
+}
+.close_pv {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  text-indent: -9999em;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+.close_pv:before,
+.close_pv:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  border-right: 1px solid #ffffff;
+}
+.close_pv:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.close_pv:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close_pv:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+@media screen and (max-width: 719px) {
+  .close_pv {
+    top: -30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 751px) {
+  .pop_video video {
+    height: 7rem;
+  }
+}
+

@@ -1,0 +1,225 @@
+﻿@charset "utf-8";
+/* common */
+@font-face {
+    font-family: 'custom';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular.eot');
+    src: url('../fonts/notosans_regular.woff2') format('woff2'),
+    url('../fonts/notosans_regular.woff') format('woff'),
+    url('../fonts/notosans_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ingame';
+    src: url('coui://ui_data/Font/Web/notosans_regular.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* korean */
+@font-face {
+    font-family: 'customKR';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_kr.eot');
+    src: url('../fonts/notosans_regular_kr.woff2') format('woff2'),
+    url('../fonts/notosans_regular_kr.woff') format('woff'),
+    url('../fonts/notosans_regular_kr.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ingameKR';
+    src: url('coui://ui_data/Font/Web/notosans_regular_kr.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* japanese */
+@font-face {
+    font-family: 'customJP';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_jp.woff2') format('woff2'),
+    url('../fonts/notosans_regular_jp.woff') format('woff'),
+    url('../fonts/notosans_regular_jp.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ingameJP';
+    src: url('coui://ui_data/Font/Web/notosans_regular_jp.ttf'),
+    url('coui://ui_data/Font/Web/notosans_regular_jp.otf') format('opentype') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* russia */
+@font-face {
+    font-family: 'customRU';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_ru.eot');
+    src: url('../fonts/notosans_regular_ru.woff2') format('woff2'),
+    url('../fonts/notosans_regular_ru.woff') format('woff'),
+    url('../fonts/notosans_regular_ru.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ingameRU';
+    src: url('coui://ui_data/Font/Web/notosans_regular_ru.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* thai */
+@font-face {
+    font-family: 'customTH';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_th.woff2') format('woff2'),
+    url('../fonts/notosans_regular_th.woff') format('woff'),
+    url('../fonts/notosans_regular_th.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ingameTH';
+    src: url('coui://ui_data/Font/Web/notosans_regular_th.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* turkey */
+@font-face {
+    font-family: 'customTR';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_tr.woff2') format('woff2'),
+    url('../fonts/notosans_regular_tr.woff') format('woff'),
+    url('../fonts/notosans_regular_tr.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'ingameTR';
+    src: url('coui://ui_data/Font/Web/notosans_regular_tr.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* taiwan */
+@font-face {
+    font-family: 'customTW';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_tw.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ingameTW';
+    src: url('coui://ui_data/Font/Web/notosans_regular_tw.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* chinese */
+@font-face {
+    font-family: 'customCN';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_cn.eot');
+    src: url('../fonts/notosans_regular_cn.woff2') format('woff2'),
+    url('../fonts/notosans_regular_cn.woff') format('woff'),
+    url('../fonts/notosans_regular_cn.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ingameCN';
+    src: url('coui://ui_data/Font/Web/notosans_regular.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+@font-face {
+    font-family: 'customAR';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/notosans_regular_arabic.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'ingameAR';
+    src: url('coui://ui_data/Font/Web/notosans_regular_arabic.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* strong sword pure */
+@font-face {
+    font-family: 'StrongSword_Pure';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/web_pearl_original.woff2') format('woff2'),
+    url('../fonts/web_pearl_original.woff') format('woff'),
+    url('../fonts/web_pearl_original.ttf') format('truetype');
+}
+/* strong sword mixed */
+@font-face {
+    font-family: 'StrongSword_Mixed';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/web_pearl_others.woff2') format('woff2'),
+    url('../fonts/web_pearl_others.woff') format('woff'),
+    url('../fonts/web_pearl_others.ttf') format('truetype');
+}
+/* strong sword New */
+@font-face {
+    font-family: 'StrongSword_New';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/web_pearl_original_new.woff2') format('woff2'),
+    url('../fonts/web_pearl_original_new.woff') format('woff'),
+    url('../fonts/web_pearl_original_new.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'StrongSword_New';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/web_pearl_original_new_bold.woff2') format('woff2'),
+    url('../fonts/web_pearl_original_new_bold.woff') format('woff'),
+    url('../fonts/web_pearl_original_new_bold.ttf') format('truetype');
+}
+/* strong sword */
+@font-face {
+    font-family: 'StrongIngame_Pure';
+    font-weight: normal;
+    font-style: normal;
+    src: url('coui://ui_data/Font/Web/pearl.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+/* strong sword */
+@font-face {
+    font-family: 'StrongIngame_Mixed';
+    font-weight: normal;
+    font-style: normal;
+    src: url('coui://ui_data/Font/Web/strongsword.ttf') format('truetype'), local('PingFang TC'), local('Helvetica Neue'), local('Helvetica'), local('STHeitiTC-Light'), local('Arial'), local('sans-serif');
+}
+
+/* web */
+html, body, div, span, input, textarea, a, button, select { font-family: custom, sans-serif; }
+:lang(ko-kr), :lang(ko-kr) body, :lang(ko-kr) div, :lang(ko-kr) span, :lang(ko-kr) input, :lang(ko-kr) textarea, :lang(ko-kr) a, :lang(ko-kr) button, :lang(ko-kr) select, :lang(ko-kr) p, :lang(ko-kr) li, :lang(ko-kr) dd, :lang(ko-kr) dt, :lang(ko-kr) sup, :lang(ko-kr) sub, :lang(ko-kr) strong, :lang(ko-kr) blockquote, :lang(ko-kr) pre, :lang(ko-kr) cite, :lang(ko-kr) em, :lang(ko-kr) td, :lang(ko-kr) th, :lang(ko-kr) article,
+:lang(en-us), :lang(en-us) body, :lang(en-us) div, :lang(en-us) span, :lang(en-us) input, :lang(en-us) textarea, :lang(en-us) a, :lang(en-us) button, :lang(en-us) select, :lang(en-us) p, :lang(en-us) li, :lang(en-us) dd, :lang(en-us) dt, :lang(en-us) sup, :lang(en-us) sub, :lang(en-us) strong, :lang(en-us) blockquote, :lang(en-us) pre, :lang(en-us) cite, :lang(en-us) em, :lang(en-us) td, :lang(en-us) th, :lang(en-us) article,
+:lang(fr-fr), :lang(fr-fr) body, :lang(fr-fr) div, :lang(fr-fr) span, :lang(fr-fr) input, :lang(fr-fr) textarea, :lang(fr-fr) a, :lang(fr-fr) button, :lang(fr-fr) select, :lang(fr-fr) p, :lang(fr-fr) li, :lang(fr-fr) dd, :lang(fr-fr) dt, :lang(fr-fr) sup, :lang(fr-fr) sub, :lang(fr-fr) strong, :lang(fr-fr) blockquote, :lang(fr-fr) pre, :lang(fr-fr) cite, :lang(fr-fr) em, :lang(fr-fr) td, :lang(fr-fr) th, :lang(fr-fr) article,
+:lang(de-de), :lang(de-de) body, :lang(de-de) div, :lang(de-de) span, :lang(de-de) input, :lang(de-de) textarea, :lang(de-de) a, :lang(de-de) button, :lang(de-de) select, :lang(de-de) p, :lang(de-de) li, :lang(de-de) dd, :lang(de-de) dt, :lang(de-de) sup, :lang(de-de) sub, :lang(de-de) strong, :lang(de-de) blockquote, :lang(de-de) pre, :lang(de-de) cite, :lang(de-de) em, :lang(de-de) td, :lang(de-de) th, :lang(de-de) article,
+:lang(tr-tr), :lang(tr-tr) body, :lang(tr-tr) div, :lang(tr-tr) span, :lang(tr-tr) input, :lang(tr-tr) textarea, :lang(tr-tr) a, :lang(tr-tr) button, :lang(tr-tr) select, :lang(tr-tr) p, :lang(tr-tr) li, :lang(tr-tr) dd, :lang(tr-tr) dt, :lang(tr-tr) sup, :lang(tr-tr) sub, :lang(tr-tr) strong, :lang(tr-tr) blockquote, :lang(tr-tr) pre, :lang(tr-tr) cite, :lang(tr-tr) em, :lang(tr-tr) td, :lang(tr-tr) th, :lang(tr-tr) article,
+:lang(es-es), :lang(es-es) body, :lang(es-es) div, :lang(es-es) span, :lang(es-es) input, :lang(es-es) textarea, :lang(es-es) a, :lang(es-es) button, :lang(es-es) select, :lang(es-es) p, :lang(es-es) li, :lang(es-es) dd, :lang(es-es) dt, :lang(es-es) sup, :lang(es-es) sub, :lang(es-es) strong, :lang(es-es) blockquote, :lang(es-es) pre, :lang(es-es) cite, :lang(es-es) em, :lang(es-es) td, :lang(es-es) th, :lang(es-es) article,
+:lang(es-mx), :lang(es-mx) body, :lang(es-mx) div, :lang(es-mx) span, :lang(es-mx) input, :lang(es-mx) textarea, :lang(es-mx) a, :lang(es-mx) button, :lang(es-mx) select, :lang(es-mx) p, :lang(es-mx) li, :lang(es-mx) dd, :lang(es-mx) dt, :lang(es-mx) sup, :lang(es-mx) sub, :lang(es-mx) strong, :lang(es-mx) blockquote, :lang(es-mx) pre, :lang(es-mx) cite, :lang(es-mx) em, :lang(es-mx) td, :lang(es-mx) th, :lang(es-mx) article,
+:lang(pt-br), :lang(pt-br) body, :lang(pt-br) div, :lang(pt-br) span, :lang(pt-br) input, :lang(pt-br) textarea, :lang(pt-br) a, :lang(pt-br) button, :lang(pt-br) select, :lang(pt-br) p, :lang(pt-br) li, :lang(pt-br) dd, :lang(pt-br) dt, :lang(pt-br) sup, :lang(pt-br) sub, :lang(pt-br) strong, :lang(pt-br) blockquote, :lang(pt-br) pre, :lang(pt-br) cite, :lang(pt-br) em, :lang(pt-br) td, :lang(pt-br) th, :lang(pt-br) article { font-family: 'StrongSword_New', sans-serif; }
+:lang(ja-jp), :lang(ja-jp) body, :lang(ja-jp) div, :lang(ja-jp) span, :lang(ja-jp) input, :lang(ja-jp) textarea, :lang(ja-jp) a, :lang(ja-jp) button, :lang(ja-jp) select, :lang(ja-jp) p, :lang(ja-jp) li, :lang(ja-jp) dd, :lang(ja-jp) dt, :lang(ja-jp) sup, :lang(ja-jp) sub, :lang(ja-jp) strong, :lang(ja-jp) blockquote, :lang(ja-jp) pre, :lang(ja-jp) cite, :lang(ja-jp) em, :lang(ja-jp) td, :lang(ja-jp) th, :lang(ja-jp) article { font-family: customJP, sans-serif; }
+:lang(ru-ru), :lang(ru-ru) body, :lang(ru-ru) div, :lang(ru-ru) span, :lang(ru-ru) input, :lang(ru-ru) textarea, :lang(ru-ru) a, :lang(ru-ru) button, :lang(ru-ru) select, :lang(ru-ru) p, :lang(ru-ru) li, :lang(ru-ru) dd, :lang(ru-ru) dt, :lang(ru-ru) sup, :lang(ru-ru) sub, :lang(ru-ru) strong, :lang(ru-ru) blockquote, :lang(ru-ru) pre, :lang(ru-ru) cite, :lang(ru-ru) em, :lang(ru-ru) td, :lang(ru-ru) th, :lang(ru-ru) article { font-family: customRU, sans-serif; }
+:lang(th-th), :lang(th-th) body, :lang(th-th) div, :lang(th-th) span, :lang(th-th) input, :lang(th-th) textarea, :lang(th-th) a, :lang(th-th) button, :lang(th-th) select, :lang(th-th) p, :lang(th-th) li, :lang(th-th) dd, :lang(th-th) dt, :lang(th-th) sup, :lang(th-th) sub, :lang(th-th) strong, :lang(th-th) blockquote, :lang(th-th) pre, :lang(th-th) cite, :lang(th-th) em, :lang(th-th) td, :lang(th-th) th, :lang(th-th) article { font-family: customTH, Lato, "Lucida Grande", Tahoma, Sans-Serif; }
+:lang(zh-tw), :lang(zh-tw) body, :lang(zh-tw) div, :lang(zh-tw) span, :lang(zh-tw) input, :lang(zh-tw) textarea, :lang(zh-tw) a, :lang(zh-tw) button, :lang(zh-tw) select, :lang(zh-tw) p, :lang(zh-tw) li, :lang(zh-tw) dd, :lang(zh-tw) dt, :lang(zh-tw) sup, :lang(zh-tw) sub, :lang(zh-tw) strong, :lang(zh-tw) blockquote, :lang(zh-tw) pre, :lang(zh-tw) cite, :lang(zh-tw) em, :lang(zh-tw) td, :lang(zh-tw) th, :lang(zh-tw) article { font-family: customTW, sans-serif; }
+:lang(zh-cn), :lang(zh-cn) body, :lang(zh-cn) div, :lang(zh-cn) span, :lang(zh-cn) input, :lang(zh-cn) textarea, :lang(zh-cn) a, :lang(zh-cn) button, :lang(zh-cn) select, :lang(zh-cn) p, :lang(zh-cn) li, :lang(zh-cn) dd, :lang(zh-cn) dt, :lang(zh-cn) sup, :lang(zh-cn) sub, :lang(zh-cn) strong, :lang(zh-cn) blockquote, :lang(zh-cn) pre, :lang(zh-cn) cite, :lang(zh-cn) em, :lang(zh-cn) td, :lang(zh-cn) th, :lang(zh-cn) article { font-family: customCN, sans-serif; }
+:lang(ar-ae), :lang(ar-ae) body, :lang(ar-ae) div, :lang(ar-ae) span, :lang(ar-ae) input, :lang(ar-ae) textarea, :lang(ar-ae) a, :lang(ar-ae) button, :lang(ar-ae) select, :lang(ar-ae) p, :lang(ar-ae) li, :lang(ar-ae) dd, :lang(ar-ae) dt, :lang(ar-ae) sup, :lang(ar-ae) sub, :lang(ar-ae) strong, :lang(ar-ae) blockquote, :lang(ar-ae) pre, :lang(ar-ae) cite, :lang(ar-ae) em, :lang(ar-ae) td, :lang(ar-ae) th, :lang(ar-ae) article { font-family: customAR, sans-serif; }
+
+/* font-default */
+:lang(ko-kr) .font-default, :lang(ko-kr) .font-default body, :lang(ko-kr) .font-default div, :lang(ko-kr) .font-default span, :lang(ko-kr) .font-default input, :lang(ko-kr) .font-default textarea, :lang(ko-kr) .font-default a, :lang(ko-kr) .font-default button, :lang(ko-kr) .font-default select, :lang(ko-kr) .font-default p, :lang(ko-kr) .font-default li, :lang(ko-kr) .font-default dd, :lang(ko-kr) .font-default dt, :lang(ko-kr) .font-default sup, :lang(ko-kr) .font-default sub, :lang(ko-kr) .font-default strong, :lang(ko-kr) .font-default blockquote, :lang(ko-kr) .font-default pre, :lang(ko-kr) .font-default cite, :lang(ko-kr) .font-default em, :lang(ko-kr) .font-default td, :lang(ko-kr) .font-default th, :lang(ko-kr) .font-default article,
+:lang(en-us) .font-default, :lang(en-us) .font-default body, :lang(en-us) .font-default div, :lang(en-us) .font-default span, :lang(en-us) .font-default input, :lang(en-us) .font-default textarea, :lang(en-us) .font-default a, :lang(en-us) .font-default button, :lang(en-us) .font-default select, :lang(en-us) .font-default p, :lang(en-us) .font-default li, :lang(en-us) .font-default dd, :lang(en-us) .font-default dt, :lang(en-us) .font-default sup, :lang(en-us) .font-default sub, :lang(en-us) .font-default strong, :lang(en-us) .font-default blockquote, :lang(en-us) .font-default pre, :lang(en-us) .font-default cite, :lang(en-us) .font-default em, :lang(en-us) .font-default td, :lang(en-us) .font-default th, :lang(en-us) .font-default article,
+:lang(fr-fr) .font-default, :lang(fr-fr) .font-default body, :lang(fr-fr) .font-default div, :lang(fr-fr) .font-default span, :lang(fr-fr) .font-default input, :lang(fr-fr) .font-default textarea, :lang(fr-fr) .font-default a, :lang(fr-fr) .font-default button, :lang(fr-fr) .font-default select, :lang(fr-fr) .font-default p, :lang(fr-fr) .font-default li, :lang(fr-fr) .font-default dd, :lang(fr-fr) .font-default dt, :lang(fr-fr) .font-default sup, :lang(fr-fr) .font-default sub, :lang(fr-fr) .font-default strong, :lang(fr-fr) .font-default blockquote, :lang(fr-fr) .font-default pre, :lang(fr-fr) .font-default cite, :lang(fr-fr) .font-default em, :lang(fr-fr) .font-default td, :lang(fr-fr) .font-default th, :lang(fr-fr) .font-default article,
+:lang(de-de) .font-default, :lang(de-de) .font-default body, :lang(de-de) .font-default div, :lang(de-de) .font-default span, :lang(de-de) .font-default input, :lang(de-de) .font-default textarea, :lang(de-de) .font-default a, :lang(de-de) .font-default button, :lang(de-de) .font-default select, :lang(de-de) .font-default p, :lang(de-de) .font-default li, :lang(de-de) .font-default dd, :lang(de-de) .font-default dt, :lang(de-de) .font-default sup, :lang(de-de) .font-default sub, :lang(de-de) .font-default strong, :lang(de-de) .font-default blockquote, :lang(de-de) .font-default pre, :lang(de-de) .font-default cite, :lang(de-de) .font-default em, :lang(de-de) .font-default td, :lang(de-de) .font-default th, :lang(de-de) .font-default article,
+:lang(tr-tr) .font-default, :lang(tr-tr) .font-default body, :lang(tr-tr) .font-default div, :lang(tr-tr) .font-default span, :lang(tr-tr) .font-default input, :lang(tr-tr) .font-default textarea, :lang(tr-tr) .font-default a, :lang(tr-tr) .font-default button, :lang(tr-tr) .font-default select, :lang(tr-tr) .font-default p, :lang(tr-tr) .font-default li, :lang(tr-tr) .font-default dd, :lang(tr-tr) .font-default dt, :lang(tr-tr) .font-default sup, :lang(tr-tr) .font-default sub, :lang(tr-tr) .font-default strong, :lang(tr-tr) .font-default blockquote, :lang(tr-tr) .font-default pre, :lang(tr-tr) .font-default cite, :lang(tr-tr) .font-default em, :lang(tr-tr) .font-default td, :lang(tr-tr) .font-default th, :lang(tr-tr) .font-default article,
+:lang(es-es) .font-default, :lang(es-es) .font-default body, :lang(es-es) .font-default div, :lang(es-es) .font-default span, :lang(es-es) .font-default input, :lang(es-es) .font-default textarea, :lang(es-es) .font-default a, :lang(es-es) .font-default button, :lang(es-es) .font-default select, :lang(es-es) .font-default p, :lang(es-es) .font-default li, :lang(es-es) .font-default dd, :lang(es-es) .font-default dt, :lang(es-es) .font-default sup, :lang(es-es) .font-default sub, :lang(es-es) .font-default strong, :lang(es-es) .font-default blockquote, :lang(es-es) .font-default pre, :lang(es-es) .font-default cite, :lang(es-es) .font-default em, :lang(es-es) .font-default td, :lang(es-es) .font-default th, :lang(es-es) .font-default article,
+:lang(es-mx) .font-default, :lang(es-mx) .font-default body, :lang(es-mx) .font-default div, :lang(es-mx) .font-default span, :lang(es-mx) .font-default input, :lang(es-mx) .font-default textarea, :lang(es-mx) .font-default a, :lang(es-mx) .font-default button, :lang(es-mx) .font-default select, :lang(es-mx) .font-default p, :lang(es-mx) .font-default li, :lang(es-mx) .font-default dd, :lang(es-mx) .font-default dt, :lang(es-mx) .font-default sup, :lang(es-mx) .font-default sub, :lang(es-mx) .font-default strong, :lang(es-mx) .font-default blockquote, :lang(es-mx) .font-default pre, :lang(es-mx) .font-default cite, :lang(es-mx) .font-default em, :lang(es-mx) .font-default td, :lang(es-mx) .font-default th, :lang(es-mx) .font-default article,
+:lang(pt-br) .font-default, :lang(pt-br) .font-default body, :lang(pt-br) .font-default div, :lang(pt-br) .font-default span, :lang(pt-br) .font-default input, :lang(pt-br) .font-default textarea, :lang(pt-br) .font-default a, :lang(pt-br) .font-default button, :lang(pt-br) .font-default select, :lang(pt-br) .font-default p, :lang(pt-br) .font-default li, :lang(pt-br) .font-default dd, :lang(pt-br) .font-default dt, :lang(pt-br) .font-default sup, :lang(pt-br) .font-default sub, :lang(pt-br) .font-default strong, :lang(pt-br) .font-default blockquote, :lang(pt-br) .font-default pre, :lang(pt-br) .font-default cite, :lang(pt-br) .font-default em, :lang(pt-br) .font-default td, :lang(pt-br) .font-default th, :lang(pt-br) .font-default article { font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+/* ingame */
+.inGameWrap { font-family: ingame, sans-serif; }
+:lang(ko-kr) .inGameWrap,
+:lang(en-us) .inGameWrap,
+:lang(fr-fr) .inGameWrap,
+:lang(de-de) .inGameWrap,
+:lang(tr-tr) .inGameWrap,
+:lang(es-es) .inGameWrap,
+:lang(es-mx) .inGameWrap,
+:lang(pt-br) .inGameWrap { font-family: 'StrongSword_New', sans-serif, sans-serif; font-weight: 400 !important; }
+:lang(ja-jp) .inGameWrap { font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+:lang(ru-ru) .inGameWrap { font-family: ingameRU, sans-serif; }
+:lang(th-th) .inGameWrap { font-family: ingameTH, Lato, "Lucida Grande", Tahoma, Sans-Serif; }
+:lang(zh-tw) .inGameWrap { font-family: ingameTW, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif; }
+:lang(zh-cn) .inGameWrap { font-family: ingameCN, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif; }
+:lang(ar-ae) .inGameWrap { font-family: ingameAR, sans-serif; }
+
+/* font-default */
+:lang(ko-kr) .inGameWrap .font-default, :lang(ko-kr) .inGameWrap .font-default body, :lang(ko-kr) .inGameWrap .font-default div, :lang(ko-kr) .inGameWrap .font-default span, :lang(ko-kr) .inGameWrap .font-default input, :lang(ko-kr) .inGameWrap .font-default textarea, :lang(ko-kr) .inGameWrap .font-default a, :lang(ko-kr) .inGameWrap .font-default button, :lang(ko-kr) .inGameWrap .font-default select, :lang(ko-kr) .inGameWrap .font-default p, :lang(ko-kr) .inGameWrap .font-default li, :lang(ko-kr) .inGameWrap .font-default dd, :lang(ko-kr) .inGameWrap .font-default dt, :lang(ko-kr) .inGameWrap .font-default sup, :lang(ko-kr) .inGameWrap .font-default sub, :lang(ko-kr) .inGameWrap .font-default strong, :lang(ko-kr) .inGameWrap .font-default blockquote, :lang(ko-kr) .inGameWrap .font-default pre, :lang(ko-kr) .inGameWrap .font-default cite, :lang(ko-kr) .inGameWrap .font-default em, :lang(ko-kr) .inGameWrap .font-default td, :lang(ko-kr) .inGameWrap .font-default th, :lang(ko-kr) .inGameWrap .font-default article,
+:lang(en-us) .inGameWrap .font-default, :lang(en-us) .inGameWrap .font-default body, :lang(en-us) .inGameWrap .font-default div, :lang(en-us) .inGameWrap .font-default span, :lang(en-us) .inGameWrap .font-default input, :lang(en-us) .inGameWrap .font-default textarea, :lang(en-us) .inGameWrap .font-default a, :lang(en-us) .inGameWrap .font-default button, :lang(en-us) .inGameWrap .font-default select, :lang(en-us) .inGameWrap .font-default p, :lang(en-us) .inGameWrap .font-default li, :lang(en-us) .inGameWrap .font-default dd, :lang(en-us) .inGameWrap .font-default dt, :lang(en-us) .inGameWrap .font-default sup, :lang(en-us) .inGameWrap .font-default sub, :lang(en-us) .inGameWrap .font-default strong, :lang(en-us) .inGameWrap .font-default blockquote, :lang(en-us) .inGameWrap .font-default pre, :lang(en-us) .inGameWrap .font-default cite, :lang(en-us) .inGameWrap .font-default em, :lang(en-us) .inGameWrap .font-default td, :lang(en-us) .inGameWrap .font-default th, :lang(en-us) .inGameWrap .font-default article,
+:lang(fr-fr) .inGameWrap .font-default, :lang(fr-fr) .inGameWrap .font-default body, :lang(fr-fr) .inGameWrap .font-default div, :lang(fr-fr) .inGameWrap .font-default span, :lang(fr-fr) .inGameWrap .font-default input, :lang(fr-fr) .inGameWrap .font-default textarea, :lang(fr-fr) .inGameWrap .font-default a, :lang(fr-fr) .inGameWrap .font-default button, :lang(fr-fr) .inGameWrap .font-default select, :lang(fr-fr) .inGameWrap .font-default p, :lang(fr-fr) .inGameWrap .font-default li, :lang(fr-fr) .inGameWrap .font-default dd, :lang(fr-fr) .inGameWrap .font-default dt, :lang(fr-fr) .inGameWrap .font-default sup, :lang(fr-fr) .inGameWrap .font-default sub, :lang(fr-fr) .inGameWrap .font-default strong, :lang(fr-fr) .inGameWrap .font-default blockquote, :lang(fr-fr) .inGameWrap .font-default pre, :lang(fr-fr) .inGameWrap .font-default cite, :lang(fr-fr) .inGameWrap .font-default em, :lang(fr-fr) .inGameWrap .font-default td, :lang(fr-fr) .inGameWrap .font-default th, :lang(fr-fr) .inGameWrap .font-default article,
+:lang(de-de) .inGameWrap .font-default, :lang(de-de) .inGameWrap .font-default body, :lang(de-de) .inGameWrap .font-default div, :lang(de-de) .inGameWrap .font-default span, :lang(de-de) .inGameWrap .font-default input, :lang(de-de) .inGameWrap .font-default textarea, :lang(de-de) .inGameWrap .font-default a, :lang(de-de) .inGameWrap .font-default button, :lang(de-de) .inGameWrap .font-default select, :lang(de-de) .inGameWrap .font-default p, :lang(de-de) .inGameWrap .font-default li, :lang(de-de) .inGameWrap .font-default dd, :lang(de-de) .inGameWrap .font-default dt, :lang(de-de) .inGameWrap .font-default sup, :lang(de-de) .inGameWrap .font-default sub, :lang(de-de) .inGameWrap .font-default strong, :lang(de-de) .inGameWrap .font-default blockquote, :lang(de-de) .inGameWrap .font-default pre, :lang(de-de) .inGameWrap .font-default cite, :lang(de-de) .inGameWrap .font-default em, :lang(de-de) .inGameWrap .font-default td, :lang(de-de) .inGameWrap .font-default th, :lang(de-de) .inGameWrap .font-default article,
+:lang(tr-tr) .inGameWrap .font-default, :lang(tr-tr) .inGameWrap .font-default body, :lang(tr-tr) .inGameWrap .font-default div, :lang(tr-tr) .inGameWrap .font-default span, :lang(tr-tr) .inGameWrap .font-default input, :lang(tr-tr) .inGameWrap .font-default textarea, :lang(tr-tr) .inGameWrap .font-default a, :lang(tr-tr) .inGameWrap .font-default button, :lang(tr-tr) .inGameWrap .font-default select, :lang(tr-tr) .inGameWrap .font-default p, :lang(tr-tr) .inGameWrap .font-default li, :lang(tr-tr) .inGameWrap .font-default dd, :lang(tr-tr) .inGameWrap .font-default dt, :lang(tr-tr) .inGameWrap .font-default sup, :lang(tr-tr) .inGameWrap .font-default sub, :lang(tr-tr) .inGameWrap .font-default strong, :lang(tr-tr) .inGameWrap .font-default blockquote, :lang(tr-tr) .inGameWrap .font-default pre, :lang(tr-tr) .inGameWrap .font-default cite, :lang(tr-tr) .inGameWrap .font-default em, :lang(tr-tr) .inGameWrap .font-default td, :lang(tr-tr) .inGameWrap .font-default th, :lang(tr-tr) .inGameWrap .font-default article,
+:lang(es-es) .inGameWrap .font-default, :lang(es-es) .inGameWrap .font-default body, :lang(es-es) .inGameWrap .font-default div, :lang(es-es) .inGameWrap .font-default span, :lang(es-es) .inGameWrap .font-default input, :lang(es-es) .inGameWrap .font-default textarea, :lang(es-es) .inGameWrap .font-default a, :lang(es-es) .inGameWrap .font-default button, :lang(es-es) .inGameWrap .font-default select, :lang(es-es) .inGameWrap .font-default p, :lang(es-es) .inGameWrap .font-default li, :lang(es-es) .inGameWrap .font-default dd, :lang(es-es) .inGameWrap .font-default dt, :lang(es-es) .inGameWrap .font-default sup, :lang(es-es) .inGameWrap .font-default sub, :lang(es-es) .inGameWrap .font-default strong, :lang(es-es) .inGameWrap .font-default blockquote, :lang(es-es) .inGameWrap .font-default pre, :lang(es-es) .inGameWrap .font-default cite, :lang(es-es) .inGameWrap .font-default em, :lang(es-es) .inGameWrap .font-default td, :lang(es-es) .inGameWrap .font-default th, :lang(es-es) .inGameWrap .font-default article,
+:lang(es-mx) .inGameWrap .font-default, :lang(es-mx) .inGameWrap .font-default body, :lang(es-mx) .inGameWrap .font-default div, :lang(es-mx) .inGameWrap .font-default span, :lang(es-mx) .inGameWrap .font-default input, :lang(es-mx) .inGameWrap .font-default textarea, :lang(es-mx) .inGameWrap .font-default a, :lang(es-mx) .inGameWrap .font-default button, :lang(es-mx) .inGameWrap .font-default select, :lang(es-mx) .inGameWrap .font-default p, :lang(es-mx) .inGameWrap .font-default li, :lang(es-mx) .inGameWrap .font-default dd, :lang(es-mx) .inGameWrap .font-default dt, :lang(es-mx) .inGameWrap .font-default sup, :lang(es-mx) .inGameWrap .font-default sub, :lang(es-mx) .inGameWrap .font-default strong, :lang(es-mx) .inGameWrap .font-default blockquote, :lang(es-mx) .inGameWrap .font-default pre, :lang(es-mx) .inGameWrap .font-default cite, :lang(es-mx) .inGameWrap .font-default em, :lang(es-mx) .inGameWrap .font-default td, :lang(es-mx) .inGameWrap .font-default th, :lang(es-mx) .inGameWrap .font-default article,
+:lang(pt-br) .inGameWrap .font-default, :lang(pt-br) .inGameWrap .font-default body, :lang(pt-br) .inGameWrap .font-default div, :lang(pt-br) .inGameWrap .font-default span, :lang(pt-br) .inGameWrap .font-default input, :lang(pt-br) .inGameWrap .font-default textarea, :lang(pt-br) .inGameWrap .font-default a, :lang(pt-br) .inGameWrap .font-default button, :lang(pt-br) .inGameWrap .font-default select, :lang(pt-br) .inGameWrap .font-default p, :lang(pt-br) .inGameWrap .font-default li, :lang(pt-br) .inGameWrap .font-default dd, :lang(pt-br) .inGameWrap .font-default dt, :lang(pt-br) .inGameWrap .font-default sup, :lang(pt-br) .inGameWrap .font-default sub, :lang(pt-br) .inGameWrap .font-default strong, :lang(pt-br) .inGameWrap .font-default blockquote, :lang(pt-br) .inGameWrap .font-default pre, :lang(pt-br) .inGameWrap .font-default cite, :lang(pt-br) .inGameWrap .font-default em, :lang(pt-br) .inGameWrap .font-default td, :lang(pt-br) .inGameWrap .font-default th, :lang(pt-br) .inGameWrap .font-default article {font-family: 'StrongSword_New', sans-serif;}
+
+/* bold */
+.bold { font-weight:bold; }

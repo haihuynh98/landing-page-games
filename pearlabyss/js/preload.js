@@ -1,0 +1,1 @@
+window._abyss=window._abyss||{},window._abyss.preload=function(a){return a.onImageError=function(a){var n=JSON.parse(a.dataset.fallbacks);0<n.length?(a.src=n.shift(),a.dataset.fallbacks=JSON.stringify(n)):(a.onerror=null,a.parentElement.classList.add("blank"))},a.init=function(){},a.init(),a}(window._abyss.preload||{});

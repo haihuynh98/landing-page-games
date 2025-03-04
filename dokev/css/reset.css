@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, button, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, textarea, select, input,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+::-ms-clear, ::-ms-reveal { display: none; }
+html { -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -ms-text-size-adjust: none; }
+body { position: relative; min-width: 100%; letter-spacing: 0; -webkit-overflow-scrolling: touch; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body, table { word-break: break-word; word-wrap: break-word; }
+table { border-collapse:collapse; border-spacing:0; width:100%; max-width:100%; }
+a { text-decoration: none; -webkit-tap-highlight-color: transparent; cursor:pointer; }
+button { border: 0; background: none; outline: 0; cursor: pointer; }
+a, button, input, label, select, textarea { -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0; }
+input:focus, textarea:focus, select:focus, button:focus { outline: none; }
+select { background: transparent; }
+select::-ms-expand { display:none; opacity: 0; }
+img { border: 0; }
+legend { position: absolute; left:-9999px; width: 1px; height:1px; margin: 0; padding: 0; background: none; font-size: 0; line-height: 0; text-indent: -9999px; }
+caption { visibility: hidden; font-size: 0; text-indent: -9999px; }
+em { font-style: normal; }
+
+/* Override Style */
+input[type="search"] { -webkit-appearance: textfield; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* Custom Class */
+.blind { position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px; }
+.clear { display: block; content:''; height: 0; font-size: 0; opacity: 0; clear: both; }
+
+/* HTML5 Reset */
+article, aside, details, figcaption, figure, footer, header, main, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before,
+blockquote:after,
+q:before, q:after { content: ''; content: none; }
+
+/* sub, sup Tag Support */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+
+/* cookiebot BI remove */
+a#CybotCookiebotDialogPoweredbyCybot { display: none !important; }
+#CybotCookiebotDialogHeader { border-bottom: none !important; padding: 0.5em 0 0 !important; }
+
+/* Lang Setting */
+:lang(ko-KR) body,
+:lang(ko-KR) table { word-break: keep-all; }
